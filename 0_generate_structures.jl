@@ -9,7 +9,7 @@ using AtomsIO
 using AtomsBase
 
 systems = AbstractSystem[]
-for repeat in 3:3
+for repeat in 1:3
     system = bulk(:Al, cubic=true) * (repeat, repeat, repeat)
     push!(systems, rattle!(FlexibleSystem(system), 1e-3))
 end
