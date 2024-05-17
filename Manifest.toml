@@ -1,8 +1,8 @@
 # This file is machine-generated - editing it directly is not advised
 
-julia_version = "1.10.3"
+julia_version = "1.10.2"
 manifest_format = "2.0"
-project_hash = "0bd8e1c62401efced7788f7802f40effbef73aff"
+project_hash = "28a1d6dd75ca5c48a00a847bf9b0afd93053ff39"
 
 [[deps.AbstractFFTs]]
 deps = ["LinearAlgebra"]
@@ -89,9 +89,7 @@ version = "0.3.5"
 
 [[deps.AtomsBuilder]]
 deps = ["AtomsBase", "JSON", "LinearAlgebra", "StaticArrays", "Unitful"]
-git-tree-sha1 = "b16b48911a1aa5b1931217c41e4a94993833d81b"
-repo-rev = "main"
-repo-url = "https://github.com/JuliaMolSim/AtomsBuilder.jl"
+git-tree-sha1 = "98ef32d184094c5834bf2fd96650cc95e0e27911"
 uuid = "f5cc8831-eeb7-4288-8d9f-d6c1ddb77004"
 version = "0.0.1"
 
@@ -214,7 +212,7 @@ weakdeps = ["Dates", "LinearAlgebra"]
 [[deps.CompilerSupportLibraries_jll]]
 deps = ["Artifacts", "Libdl"]
 uuid = "e66e0078-7015-5450-92f7-15fbd957f2ae"
-version = "1.1.1+0"
+version = "1.1.0+0"
 
 [[deps.ComponentArrays]]
 deps = ["ArrayInterface", "ChainRulesCore", "ForwardDiff", "Functors", "LinearAlgebra", "PackageExtensionCompat", "StaticArrayInterface", "StaticArraysCore"]
