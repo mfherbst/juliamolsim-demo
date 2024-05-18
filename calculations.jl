@@ -1,6 +1,8 @@
 using AtomsIO
 using DFTK
 using LazyArtifacts
+using JSON3
+using Printf
 setup_threading()
 
 function run_calculation(system)
@@ -22,16 +24,14 @@ function run_calculation(system)
     if mpi_master()
         println(DFTK.timer)
     end
-    (; energy=scfres.energies.total, forces, stresses)
+    (; scfres, forces, stresses)
 end
 
 function run_extxyz(file)
     @assert endswith(file, ".extxyz")
     systems = load_trajectory(file)
     bn, _   = splitext(file)
-    outfile = bn * "_out.extxyz"
 
-    systems_plus_data = empty(systems)
     for (i, system) in enumerate(systems)
         if mpi_master()
             println("#")
@@ -40,10 +40,9 @@ function run_extxyz(file)
         end
 
         res = run_calculation(system)
-        push!(systems_plus_data,
-              FlexibleSystem(system; res.energy, res.forces, res.stresses))
-        if mpi_master()
-            save_trajectory(outfile, systems_plus_data)
-        end
+
+        istr = @sprintf "%04i" i
+        extra_data = Dict("forces" => res.forces, "stresses" => res.stresses)
+        save_scfres(joinpath("dftk_output", bn * "-$istr.json"), res.scfres; extra_data)
     end
 end
