@@ -28,6 +28,10 @@ function rattle_system(system, r_pos, r_cell)
     rattle!(system, r_pos)  # Rattle positions (inplace)
     system
 end
+function drop_atom(system, idx::Integer)
+    atoms = [at for (i, at) in enumerate(system) if i != idx]
+    FlexibleSystem(system; atoms)
+end
 
 # Some parameters
 maxrattle_pos  = 0.1
@@ -35,14 +39,13 @@ maxrattle_cell = 0.1
 max_supercell  = 3
 
 # Category 1 structures: MD stability
-let
-    n_structures = 100
-    file = "Al_supercells_1.extxyz"
-
+let file = "Al_supercells_1.extxyz", n_structures = 100
     if !isfile(file)
         systems = map(1:n_structures) do i
-            n = rand(1:max_supercell)
-            system = bulk(:Al, cubic=true) * (n, n, n)
+            nx = rand(1:max_supercell)
+            ny = rand(1:max_supercell)
+            nz = rand(1:max_supercell)
+            system = bulk(:Al, cubic=true) * (nx, ny, nz)
             rattle_system(system,
                           maxrattle_pos  * rand(),
                           maxrattle_cell * rand())
@@ -52,10 +55,7 @@ let
 end
 
 # Category 2 structures: Virials, elastic constants, long-range elastic fields
-let
-    n_structures = 100
-    file = "Al_bulk_1.extxyz"
-
+let file = "Al_bulk_1.extxyz", n_structures = 100
     if !isfile(file)
         systems = map(1:n_structures) do i
             rattle_cell(bulk(:Al), maxrattle_cell * rand(); update_position=false)
@@ -65,4 +65,20 @@ let
 end
 
 # Category 3 structures: Defects
-# TODO
+let file = "Al_defect_1.extxyz", n_structures = 100
+    if !isfile(file)
+        systems = map(1:n_structures) do i
+            nx = rand(1:max_supercell)
+            ny = rand(1:max_supercell)
+            nz = rand(1:max_supercell)
+            system = bulk(:Al, cubic=true) * (nx, ny, nz)
+
+            idx = rand(1:length(system))
+            system = drop_atom(system, idx)
+            rattle_system(system,
+                          maxrattle_pos  * rand(),
+                          maxrattle_cell * rand())
+        end
+        save_trajectory(file, systems)
+    end
+end

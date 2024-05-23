@@ -20,7 +20,12 @@ function run_calculation(system)
     end
     scfres   = self_consistent_field(basis; tol=1e-10)
     forces   = compute_forces_cart(scfres)
-    stresses = compute_stresses_cart(scfres)
+
+    if length(system) > 50  # Performance issue in DFTK
+        stresses = "nothing"
+    else
+        stresses = compute_stresses_cart(scfres)
+    end
     if mpi_master()
         println(DFTK.timer)
     end
@@ -33,6 +38,10 @@ function run_extxyz(file)
     bn, _   = splitext(file)
 
     for (i, system) in enumerate(systems)
+        istr = @sprintf "%04i" i
+        outfile = joinpath("dftk_output", bn * "-$istr.json")
+        isfile(outfile) && continue
+
         if mpi_master()
             println("#")
             println("# $i / $(length(systems)) ================================")
@@ -41,8 +50,7 @@ function run_extxyz(file)
 
         res = run_calculation(system)
 
-        istr = @sprintf "%04i" i
         extra_data = Dict("forces" => res.forces, "stresses" => res.stresses)
-        save_scfres(joinpath("dftk_output", bn * "-$istr.json"), res.scfres; extra_data)
+        save_scfres(outfile, res.scfres; extra_data)
     end
 end

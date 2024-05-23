@@ -1,0 +1,2035 @@
+#
+# 4 / 100 ================================
+#
+#
+# 6 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (40, 108, 120), 518400 total points
+    kgrid                : MonkhorstPack([7, 3, 3])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [7.66315   , -0.183288 , -0.0461458]
+                               [-0.0565829, 22.9208   , 0.179231  ]
+                               [-0.0115755, -0.0853969, 23.1274   ]
+        unit cell volume     : 4062.1 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.41580800724                   -0.69   15.5     155s
+  2   -83.42386045307       -2.09       -1.06    1.4    64.0s
+  3   -83.42644182467       -2.59       -2.48    6.9    83.4s
+  4   -83.42670884341       -3.57       -2.64    8.2     114s
+  5   -83.42676037760       -4.29       -3.38    2.3    56.3s
+  6   -83.42676264396       -5.64       -3.51    7.1    98.2s
+  7   -83.42676307621       -6.36       -3.60    1.7    49.6s
+  8   -83.42676416258       -5.96       -4.67    2.1    55.7s
+  9   -83.42676418271       -7.70       -4.64    9.7     122s
+ 10   -83.42676418982       -8.15       -5.32    2.0    49.1s
+ 11   -83.42676419007       -9.59       -5.46    5.6    80.6s
+ 12   -83.42676419017      -10.02       -5.62    1.8    47.4s
+ 13   -83.42676419027       -9.99       -6.86    2.6    56.0s
+ 14   -83.42676419027      -12.03       -6.58   11.3     122s
+ 15   -83.42676419027      -12.03       -6.89    2.1    51.0s
+ 16   -83.42676419027      -12.49       -8.14    2.9    59.7s
+ 17   -83.42676419027   +    -Inf       -7.84   10.6     120s
+ 18   -83.42676419027   +    -Inf       -8.17    2.4    52.9s
+ 19   -83.42676419027   +    -Inf       -8.59    3.2    61.4s
+ 20   -83.42676419027   +    -Inf       -8.85    2.9    57.3s
+ 21   -83.42676419027      -13.85       -9.11    2.8    53.8s
+ 22   -83.42676419027   +    -Inf       -9.76    3.3    61.7s
+ 23   -83.42676419027   +  -13.55      -10.02    6.1    86.0s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2734s /  99.3%            605GiB /  99.1%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1764s   65.0%   1764s    166GiB   27.6%   166GiB
+   LOBPCG                 184    1377s   50.8%   7.49s    121GiB   20.1%   671MiB
+     DftHamiltonian...  1.07k     884s   32.6%   824ms   21.5GiB    3.6%  20.5MiB
+       local+kinetic    41.4k     573s   21.1%  13.8ms   22.7MiB    0.0%     576B
+       nonlocal         1.07k     306s   11.3%   285ms   17.3GiB    2.9%  16.5MiB
+     ortho! X vs Y      1.60k     117s    4.3%  73.2ms   13.3GiB    2.2%  8.52MiB
+       ortho!           3.39k    28.3s    1.0%  8.35ms    557MiB    0.1%   168KiB
+     rayleigh_ritz        890    54.2s    2.0%  60.9ms    911MiB    0.1%  1.02MiB
+       ortho!             890    165ms    0.0%   186μs    121MiB    0.0%   139KiB
+     Update residuals   1.07k    39.2s    1.4%  36.5ms   15.9GiB    2.6%  15.1MiB
+     preconditioning    1.07k    5.26s    0.2%  4.90ms   18.8MiB    0.0%  17.9KiB
+     ortho!               184    4.65s    0.2%  25.3ms   66.1MiB    0.0%   368KiB
+   energy_hamiltonian      47     139s    5.1%   2.96s   25.8GiB    4.3%   562MiB
+     ene_ops               47     135s    5.0%   2.88s   20.0GiB    3.3%   435MiB
+       ene_ops: non...     47    77.1s    2.8%   1.64s   0.97GiB    0.2%  21.1MiB
+       ene_ops: xc         47    44.4s    1.6%   946ms   16.8GiB    2.8%   366MiB
+       ene_ops: kin...     47    5.12s    0.2%   109ms   5.56MiB    0.0%   121KiB
+       ene_ops: har...     47    2.07s    0.1%  44.1ms   1.82GiB    0.3%  39.6MiB
+       ene_ops: local      47    178ms    0.0%  3.79ms    372MiB    0.1%  7.92MiB
+   compute_density         23     107s    3.9%   4.65s   1.24GiB    0.2%  55.4MiB
+     symmetrize_ρ          23    1.87s    0.1%  81.4ms   0.98GiB    0.2%  43.5MiB
+   χ0Mixing                23    43.8s    1.6%   1.91s   13.6GiB    2.3%   606MiB
+     compute_density       23    17.3s    0.6%   751ms   1.24GiB    0.2%  55.4MiB
+       symmetrize_ρ        23    649ms    0.0%  28.2ms   0.98GiB    0.2%  43.5MiB
+     apply_kernel         204    15.5s    0.6%  75.9ms   8.67GiB    1.4%  43.5MiB
+   ortho_qr                16    2.48s    0.1%   155ms    850MiB    0.1%  53.1MiB
+ compute_stresses_cart      1     806s   29.7%    806s    306GiB   51.0%   306GiB
+   compute_density          1     446s   16.4%    446s    169GiB   28.2%   169GiB
+     symmetrize_ρ           1    3.36s    0.1%   3.36s    939MiB    0.2%   939MiB
+   energy_hamiltonian       1     228s    8.4%    228s   10.0GiB    1.7%  10.0GiB
+     ene_ops                1     221s    8.2%    221s   8.70GiB    1.5%  8.70GiB
+       ene_ops: non...      1     170s    6.3%    170s    337MiB    0.1%   337MiB
+       ene_ops: xc          1    25.5s    0.9%   25.5s   7.09GiB    1.2%  7.09GiB
+       ene_ops: kin...      1    2.34s    0.1%   2.34s   14.7MiB    0.0%  14.7MiB
+       ene_ops: har...      1    2.26s    0.1%   2.26s    880MiB    0.1%   880MiB
+       ene_ops: local       1   34.8ms    0.0%  34.8ms   79.1MiB    0.0%  79.1MiB
+   Instantiation At...      1    45.2s    1.7%   45.2s   37.9GiB    6.3%  37.9GiB
+   Instantiation Xc         1    37.8s    1.4%   37.8s   40.4GiB    6.7%  40.4GiB
+     enforce_real!          1   6.86ms    0.0%  6.86ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    36.5s    1.3%   36.5s   47.1GiB    7.8%  47.1GiB
+     enforce_real!          1   5.28ms    0.0%  5.28ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ewald      1    2.35s    0.1%   2.35s    134MiB    0.0%   134MiB
+     precomp: Ewald         1    1.60s    0.1%   1.60s   39.8MiB    0.0%  39.8MiB
+   Instantiation Ha...      1    1.76s    0.1%   1.76s    153MiB    0.0%   153MiB
+     enforce_real!          1   6.66ms    0.0%  6.66ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ki...      1    925ms    0.0%   925ms    133MiB    0.0%   133MiB
+   build_kpoints            1    564ms    0.0%   564ms    119MiB    0.0%   119MiB
+   Instantiation Ps...      1    309ms    0.0%   309ms   14.8MiB    0.0%  14.8MiB
+   Instantiation En...      1    390μs    0.0%   390μs   28.7KiB    0.0%  28.7KiB
+   _check_kpoint_re...      1   17.0μs    0.0%  17.0μs     0.00B    0.0%    0.00B
+ compute_forces             1     104s    3.8%    104s    107GiB   17.9%   107GiB
+   forces: nonlocal         1    66.5s    2.5%   66.5s   79.9GiB   13.3%  79.9GiB
+   forces: local            1    21.2s    0.8%   21.2s   22.0GiB    3.7%  22.0GiB
+   forces: xc               1    13.9s    0.5%   13.9s   5.23GiB    0.9%  5.23GiB
+ PlaneWaveBasis             1    39.5s    1.5%   39.5s   20.9GiB    3.5%  20.9GiB
+   Instantiation At...      1    14.7s    0.5%   14.7s   11.7GiB    2.0%  11.7GiB
+     enforce_real!          1   5.67ms    0.0%  5.67ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Xc         1    12.5s    0.5%   12.5s   4.48GiB    0.7%  4.48GiB
+     enforce_real!          1   6.31ms    0.0%  6.31ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    8.44s    0.3%   8.44s   4.07GiB    0.7%  4.07GiB
+   Instantiation Ps...      1    438ms    0.0%   438ms   20.2MiB    0.0%  20.2MiB
+   build_kpoints            1   77.9ms    0.0%  77.9ms    119MiB    0.0%   119MiB
+   Instantiation Ewald      1   72.7ms    0.0%  72.7ms   8.48KiB    0.0%  8.48KiB
+     precomp: Ewald         1   72.5ms    0.0%  72.5ms   5.67KiB    0.0%  5.67KiB
+   Instantiation Ha...      1   18.4ms    0.0%  18.4ms   11.9MiB    0.0%  11.9MiB
+     enforce_real!          1   9.23ms    0.0%  9.23ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ki...      1   5.06ms    0.0%  5.06ms   11.0MiB    0.0%  11.0MiB
+   Instantiation En...      1   22.9μs    0.0%  22.9μs      864B    0.0%     864B
+   _check_kpoint_re...      1   18.9μs    0.0%  18.9μs     0.00B    0.0%    0.00B
+ symmetry_operations        1   34.7ms    0.0%  34.7ms   4.60MiB    0.0%  4.60MiB
+   _check_symmetries        1   52.4μs    0.0%  52.4μs   1.81KiB    0.0%  1.81KiB
+ enforce_real!              1   5.84ms    0.0%  5.84ms   5.23KiB    0.0%  5.23KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 7 / 100 ================================
+#
+#
+# 9 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (108, 40, 120), 518400 total points
+    kgrid                : MonkhorstPack([3, 7, 3])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [22.9139   , 0.0587529 , -0.29863  ]
+                               [0.612004  , 7.81698   , 0.13265   ]
+                               [-0.13162  , -0.037231 , 23.5682   ]
+        unit cell volume     : 4220.4 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.38536245342                   -0.69   14.5     124s
+  2   -83.39729106095       -1.92       -1.06    1.1    48.8s
+  3   -83.40141466610       -2.38       -2.22    7.0    81.1s
+  4   -83.40182258145       -3.39       -2.41    6.9    85.4s
+  5   -83.40201838742       -3.71       -3.01    2.6    54.5s
+  6   -83.40202721814       -5.05       -3.21    7.5    86.7s
+  7   -83.40203005028       -5.55       -3.35    2.5    48.9s
+  8   -83.40203394328       -5.41       -4.28    3.2    57.2s
+  9   -83.40203398781       -7.35       -4.24   10.1     118s
+ 10   -83.40203403276       -7.35       -4.82    2.0    55.5s
+ 11   -83.40203403486       -8.68       -5.03    6.1    88.3s
+ 12   -83.40203403597       -8.95       -5.24    2.2    53.8s
+ 13   -83.40203403671       -9.13       -5.96    3.5    63.7s
+ 14   -83.40203403674      -10.56       -6.19    8.6    95.2s
+ 15   -83.40203403674      -11.27       -6.40    3.0    53.1s
+ 16   -83.40203403675      -11.40       -7.46    4.1    63.0s
+ 17   -83.40203403675      -12.94       -7.66   10.5     111s
+ 18   -83.40203403675      -13.85       -8.16    3.1    60.2s
+ 19   -83.40203403675   +  -13.85       -8.45    5.8    68.4s
+ 20   -83.40203403675      -13.85       -8.85    4.1    57.9s
+ 21   -83.40203403675   +  -13.55       -9.46    4.5    71.0s
+ 22   -83.40203403675      -13.85       -9.75    7.7    75.9s
+ 23   -83.40203403675   +    -Inf      -10.30    3.7    63.2s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2604s /  99.7%            608GiB /  99.3%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1693s   65.2%   1693s    171GiB   28.3%   171GiB
+   LOBPCG                 184    1234s   47.5%   6.71s    126GiB   20.9%   701MiB
+     DftHamiltonian...  1.19k     782s   30.1%   657ms   22.6GiB    3.7%  19.4MiB
+       local+kinetic    41.5k     483s   18.6%  11.7ms   22.8MiB    0.0%     576B
+       nonlocal         1.19k     292s   11.2%   245ms   17.9GiB    3.0%  15.4MiB
+     ortho! X vs Y      1.83k     114s    4.4%  62.1ms   14.1GiB    2.3%  7.88MiB
+       ortho!           3.87k    26.0s    1.0%  6.72ms    534MiB    0.1%   141KiB
+     rayleigh_ritz      1.01k    50.2s    1.9%  49.9ms    877MiB    0.1%   892KiB
+       ortho!           1.01k    151ms    0.0%   150μs    117MiB    0.0%   119KiB
+     Update residuals   1.19k    37.9s    1.5%  31.9ms   16.5GiB    2.7%  14.2MiB
+     preconditioning    1.19k    4.53s    0.2%  3.80ms   18.9MiB    0.0%  16.3KiB
+     ortho!               184    4.44s    0.2%  24.1ms   64.3MiB    0.0%   358KiB
+   energy_hamiltonian      47     138s    5.3%   2.94s   25.7GiB    4.3%   559MiB
+     ene_ops               47     135s    5.2%   2.87s   19.8GiB    3.3%   432MiB
+       ene_ops: non...     47    77.1s    3.0%   1.64s   0.95GiB    0.2%  20.8MiB
+       ene_ops: xc         47    30.7s    1.2%   654ms   16.7GiB    2.8%   364MiB
+       ene_ops: kin...     47    13.6s    0.5%   290ms   5.48MiB    0.0%   119KiB
+       ene_ops: har...     47    2.18s    0.1%  46.4ms   1.82GiB    0.3%  39.6MiB
+       ene_ops: local      47    523ms    0.0%  11.1ms    372MiB    0.1%  7.92MiB
+   compute_density         23     101s    3.9%   4.38s   1.24GiB    0.2%  55.4MiB
+     symmetrize_ρ          23    1.46s    0.1%  63.4ms   0.98GiB    0.2%  43.5MiB
+   χ0Mixing                23    42.0s    1.6%   1.82s   14.0GiB    2.3%   622MiB
+     compute_density       23    17.4s    0.7%   758ms   1.24GiB    0.2%  55.4MiB
+       symmetrize_ρ        23    601ms    0.0%  26.1ms   0.98GiB    0.2%  43.5MiB
+     apply_kernel         211    14.3s    0.5%  67.6ms   8.97GiB    1.5%  43.5MiB
+   ortho_qr                 8    1.44s    0.1%   180ms    438MiB    0.1%  54.7MiB
+ compute_stresses_cart      1     777s   29.9%    777s    303GiB   50.2%   303GiB
+   compute_density          1     479s   18.4%    479s    167GiB   27.6%   167GiB
+     symmetrize_ρ           1    2.39s    0.1%   2.39s    910MiB    0.1%   910MiB
+   energy_hamiltonian       1     197s    7.6%    197s   8.92GiB    1.5%  8.92GiB
+     ene_ops                1     193s    7.4%    193s   7.69GiB    1.3%  7.69GiB
+       ene_ops: non...      1     168s    6.5%    168s    133MiB    0.0%   133MiB
+       ene_ops: xc          1    15.9s    0.6%   15.9s   6.63GiB    1.1%  6.63GiB
+       ene_ops: har...      1    2.41s    0.1%   2.41s    870MiB    0.1%   870MiB
+       ene_ops: kin...      1    1.24s    0.0%   1.24s    422KiB    0.0%   422KiB
+       ene_ops: local       1    389ms    0.0%   389ms   79.1MiB    0.0%  79.1MiB
+   Instantiation At...      1    35.4s    1.4%   35.4s   39.2GiB    6.5%  39.2GiB
+   Instantiation Xc         1    32.7s    1.3%   32.7s   40.3GiB    6.7%  40.3GiB
+     enforce_real!          1   5.38ms    0.0%  5.38ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    29.5s    1.1%   29.5s   46.9GiB    7.8%  46.9GiB
+     enforce_real!          1   5.55ms    0.0%  5.55ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ewald      1    184ms    0.0%   184ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    184ms    0.0%   184ms   31.7KiB    0.0%  31.7KiB
+   build_kpoints            1   93.8ms    0.0%  93.8ms    119MiB    0.0%   119MiB
+   Instantiation Ha...      1   44.0ms    0.0%  44.0ms    119MiB    0.0%   119MiB
+     enforce_real!          1   5.40ms    0.0%  5.40ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ki...      1   34.8ms    0.0%  34.8ms    114MiB    0.0%   114MiB
+   Instantiation Ps...      1   53.8μs    0.0%  53.8μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   23.9μs    0.0%  23.9μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   16.8μs    0.0%  16.8μs     0.00B    0.0%    0.00B
+ compute_forces             1    96.9s    3.7%   96.9s    109GiB   18.1%   109GiB
+   forces: nonlocal         1    65.0s    2.5%   65.0s   81.9GiB   13.6%  81.9GiB
+   forces: local            1    20.2s    0.8%   20.2s   22.0GiB    3.7%  22.0GiB
+   forces: xc               1    11.7s    0.5%   11.7s   5.23GiB    0.9%  5.23GiB
+ PlaneWaveBasis             1    29.8s    1.1%   29.8s   20.9GiB    3.5%  20.9GiB
+   Instantiation At...      1    11.5s    0.4%   11.5s   11.6GiB    1.9%  11.6GiB
+     enforce_real!          1   5.36ms    0.0%  5.36ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Xc         1    10.6s    0.4%   10.6s   4.47GiB    0.7%  4.47GiB
+     enforce_real!          1   5.45ms    0.0%  5.45ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    5.97s    0.2%   5.97s   4.14GiB    0.7%  4.14GiB
+   build_kpoints            1   81.9ms    0.0%  81.9ms    119MiB    0.0%   119MiB
+   Instantiation Ewald      1   67.2ms    0.0%  67.2ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   67.2ms    0.0%  67.2ms   4.83KiB    0.0%  4.83KiB
+   Instantiation Ha...      1   11.1ms    0.0%  11.1ms   11.9MiB    0.0%  11.9MiB
+     enforce_real!          1   5.32ms    0.0%  5.32ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ki...      1   6.08ms    0.0%  6.08ms   11.4MiB    0.0%  11.4MiB
+   Instantiation Ps...      1   49.6μs    0.0%  49.6μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   16.3μs    0.0%  16.3μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   2.69μs    0.0%  2.69μs      672B    0.0%     672B
+ enforce_real!              1   5.43ms    0.0%  5.43ms   5.23KiB    0.0%  5.23KiB
+ symmetry_operations        1   1.32ms    0.0%  1.32ms    122KiB    0.0%   122KiB
+   _check_symmetries        1    207μs    0.0%   207μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 10 / 100 ================================
+#
+#
+# 11 / 100 ================================
+#
+#
+# 19 / 100 ================================
+#
+#
+# 20 / 100 ================================
+#
+#
+# 23 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (120, 40, 108), 518400 total points
+    kgrid                : MonkhorstPack([3, 7, 3])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [23.2058   , 0.029851  , -0.33557  ]
+                               [0.276079  , 7.46933   , 0.395511  ]
+                               [0.552759  , 0.0388435 , 22.8459   ]
+        unit cell volume     : 3960.8 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.40521834772                   -0.68   15.8     127s
+  2   -83.41711313118       -1.92       -1.06    1.4    51.2s
+  3   -83.41980480042       -2.57       -2.44    7.1    82.0s
+  4   -83.42006591491       -3.58       -2.58    8.2    98.9s
+  5   -83.42013403874       -4.17       -3.28    2.3    52.1s
+  6   -83.42013712540       -5.51       -3.46    7.3    84.4s
+  7   -83.42013792381       -6.10       -3.59    2.0    45.6s
+  8   -83.42013910588       -5.93       -4.57    2.6    52.0s
+  9   -83.42013912574       -7.70       -4.51    9.2     106s
+ 10   -83.42013913960       -7.86       -5.16    2.0    48.9s
+ 11   -83.42013914015       -9.26       -5.29    5.6    78.9s
+ 12   -83.42013914042       -9.57       -5.50    1.7    47.3s
+ 13   -83.42013914061       -9.72       -6.79    3.2    57.5s
+ 14   -83.42013914061      -12.12       -6.39   10.4     117s
+ 15   -83.42013914061      -11.68       -6.66    2.4    52.1s
+ 16   -83.42013914061      -12.05       -7.97    3.3    58.6s
+ 17   -83.42013914061   +    -Inf       -7.63   10.4     117s
+ 18   -83.42013914061   +    -Inf       -7.80    1.9    47.1s
+ 19   -83.42013914061      -13.85       -8.90    3.4    59.9s
+ 20   -83.42013914061      -13.85       -9.27    8.0     102s
+ 21   -83.42013914061   +    -Inf       -9.56    3.4    60.5s
+ 22   -83.42013914061   +  -13.55      -10.14    3.5    65.2s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2488s /  99.7%            594GiB /  99.2%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1617s   65.2%   1617s    161GiB   27.2%   161GiB
+   LOBPCG                 176    1209s   48.7%   6.87s    117GiB   19.9%   684MiB
+     DftHamiltonian...  1.08k     784s   31.6%   727ms   21.0GiB    3.6%  20.0MiB
+       local+kinetic    41.1k     510s   20.6%  12.4ms   22.6MiB    0.0%     576B
+       nonlocal         1.08k     264s   10.6%   245ms   16.7GiB    2.8%  15.9MiB
+     ortho! X vs Y      1.63k     101s    4.1%  61.7ms   13.6GiB    2.3%  8.55MiB
+       ortho!           3.50k    24.5s    1.0%  7.01ms    566MiB    0.1%   166KiB
+     rayleigh_ritz        902    48.8s    2.0%  54.1ms    920MiB    0.2%  1.02MiB
+       ortho!             902    149ms    0.0%   165μs    120MiB    0.0%   137KiB
+     Update residuals   1.08k    37.0s    1.5%  34.3ms   15.4GiB    2.6%  14.6MiB
+     preconditioning    1.08k    4.12s    0.2%  3.82ms   18.7MiB    0.0%  17.7KiB
+     ortho!               176    4.05s    0.2%  23.0ms   63.2MiB    0.0%   368KiB
+   energy_hamiltonian      45     113s    4.5%   2.50s   24.6GiB    4.2%   559MiB
+     ene_ops               45     110s    4.4%   2.44s   19.0GiB    3.2%   433MiB
+       ene_ops: non...     45    66.6s    2.7%   1.48s    947MiB    0.2%  21.0MiB
+       ene_ops: xc         45    30.5s    1.2%   677ms   16.0GiB    2.7%   364MiB
+       ene_ops: kin...     45    6.46s    0.3%   144ms   5.31MiB    0.0%   121KiB
+       ene_ops: har...     45    2.20s    0.1%  49.0ms   1.74GiB    0.3%  39.6MiB
+       ene_ops: local      45    149ms    0.0%  3.32ms    356MiB    0.1%  7.92MiB
+   compute_density         22    96.1s    3.9%   4.37s   1.19GiB    0.2%  55.4MiB
+     symmetrize_ρ          22    828ms    0.0%  37.6ms   0.93GiB    0.2%  43.5MiB
+   χ0Mixing                22    41.7s    1.7%   1.89s   13.2GiB    2.2%   613MiB
+     compute_density       22    17.9s    0.7%   812ms   1.19GiB    0.2%  55.4MiB
+       symmetrize_ρ        22    1.00s    0.0%  45.6ms   0.93GiB    0.2%  43.5MiB
+     apply_kernel         198    13.7s    0.6%  69.2ms   8.41GiB    1.4%  43.5MiB
+   ortho_qr                16    1.61s    0.1%   101ms    830MiB    0.1%  51.9MiB
+ compute_stresses_cart      1     685s   27.6%    685s    303GiB   51.4%   303GiB
+   compute_density          1     408s   16.4%    408s    169GiB   28.7%   169GiB
+     symmetrize_ρ           1    2.18s    0.1%   2.18s    910MiB    0.2%   910MiB
+   energy_hamiltonian       1     181s    7.3%    181s   8.92GiB    1.5%  8.92GiB
+     ene_ops                1     178s    7.2%    178s   7.69GiB    1.3%  7.69GiB
+       ene_ops: non...      1     158s    6.3%    158s    135MiB    0.0%   135MiB
+       ene_ops: xc          1    15.2s    0.6%   15.2s   6.63GiB    1.1%  6.63GiB
+       ene_ops: har...      1    2.25s    0.1%   2.25s    870MiB    0.1%   870MiB
+       ene_ops: kin...      1    596ms    0.0%   596ms    428KiB    0.0%   428KiB
+       ene_ops: local       1    385ms    0.0%   385ms   79.1MiB    0.0%  79.1MiB
+   Instantiation At...      1    32.3s    1.3%   32.3s   36.8GiB    6.3%  36.8GiB
+   Instantiation Xc         1    31.6s    1.3%   31.6s   40.3GiB    6.8%  40.3GiB
+     enforce_real!          1   5.28ms    0.0%  5.28ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    29.3s    1.2%   29.3s   46.9GiB    8.0%  46.9GiB
+     enforce_real!          1   5.30ms    0.0%  5.30ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ewald      1    189ms    0.0%   189ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    189ms    0.0%   189ms   31.7KiB    0.0%  31.7KiB
+   build_kpoints            1   94.9ms    0.0%  94.9ms    119MiB    0.0%   119MiB
+   Instantiation Ki...      1   44.4ms    0.0%  44.4ms    107MiB    0.0%   107MiB
+   Instantiation Ha...      1   28.6ms    0.0%  28.6ms    119MiB    0.0%   119MiB
+     enforce_real!          1   6.05ms    0.0%  6.05ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ps...      1   55.0μs    0.0%  55.0μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   26.8μs    0.0%  26.8μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   16.6μs    0.0%  16.6μs     0.00B    0.0%    0.00B
+ compute_forces             1     148s    6.0%    148s    105GiB   17.9%   105GiB
+   forces: nonlocal         1     116s    4.7%    116s   77.9GiB   13.2%  77.9GiB
+   forces: local            1    20.1s    0.8%   20.1s   22.0GiB    3.7%  22.0GiB
+   forces: xc               1    12.1s    0.5%   12.1s   5.23GiB    0.9%  5.23GiB
+ PlaneWaveBasis             1    30.6s    1.2%   30.6s   20.6GiB    3.5%  20.6GiB
+   Instantiation At...      1    11.4s    0.5%   11.4s   11.6GiB    2.0%  11.6GiB
+     enforce_real!          1   5.40ms    0.0%  5.40ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Xc         1    10.4s    0.4%   10.4s   4.47GiB    0.8%  4.47GiB
+     enforce_real!          1   5.46ms    0.0%  5.46ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    5.68s    0.2%   5.68s   3.89GiB    0.7%  3.89GiB
+   Instantiation Ewald      1   66.3ms    0.0%  66.3ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   66.2ms    0.0%  66.2ms   4.83KiB    0.0%  4.83KiB
+   build_kpoints            1   33.6ms    0.0%  33.6ms    119MiB    0.0%   119MiB
+   Instantiation Ha...      1   9.93ms    0.0%  9.93ms   11.9MiB    0.0%  11.9MiB
+     enforce_real!          1   5.15ms    0.0%  5.15ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ki...      1   3.95ms    0.0%  3.95ms   10.7MiB    0.0%  10.7MiB
+   Instantiation Ps...      1   64.3μs    0.0%  64.3μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   17.3μs    0.0%  17.3μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   3.47μs    0.0%  3.47μs      672B    0.0%     672B
+ enforce_real!              1   5.40ms    0.0%  5.40ms   5.23KiB    0.0%  5.23KiB
+ symmetry_operations        1    550μs    0.0%   550μs    122KiB    0.0%   122KiB
+   _check_symmetries        1   15.9μs    0.0%  15.9μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 26 / 100 ================================
+#
+#
+# 27 / 100 ================================
+#
+#
+# 28 / 100 ================================
+#
+#
+# 33 / 100 ================================
+#
+#
+# 35 / 100 ================================
+#
+#
+# 36 / 100 ================================
+#
+#
+# 38 / 100 ================================
+#
+#
+# 39 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (108, 40, 108), 466560 total points
+    kgrid                : MonkhorstPack([3, 7, 3])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [22.8554   , -0.00211844, -0.089936 ]
+                               [-0.112778 , 7.64173   , 0.0278392 ]
+                               [0.0766346 , -0.0169653, 23.0486   ]
+        unit cell volume     : 4025.6 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.40436609918                   -0.68   14.8     114s
+  2   -83.41696814927       -1.90       -1.06    1.0    43.8s
+  3   -83.42114894603       -2.38       -2.25    6.5    73.9s
+  4   -83.42161307264       -3.33       -2.43    7.0    73.9s
+  5   -83.42188082834       -3.57       -3.11    3.0    51.1s
+  6   -83.42188462696       -5.42       -3.21    7.8    77.2s
+  7   -83.42188787362       -5.49       -3.32    1.6    42.0s
+  8   -83.42189334334       -5.26       -4.07    3.0    48.7s
+  9   -83.42189345409       -6.96       -4.32    9.1    81.3s
+ 10   -83.42189347153       -7.76       -4.88    3.1    54.0s
+ 11   -83.42189347291       -8.86       -5.24    5.4    66.9s
+ 12   -83.42189347340       -9.30       -5.64    4.8    60.4s
+ 13   -83.42189347351       -9.99       -6.17    4.9    60.2s
+ 14   -83.42189347351      -11.15       -6.64    5.0    68.6s
+ 15   -83.42189347351      -12.14       -7.24    6.4    66.1s
+ 16   -83.42189347351      -13.37       -7.45    6.8    75.6s
+ 17   -83.42189347351      -13.55       -8.12    2.9    46.7s
+ 18   -83.42189347351   +  -13.85       -8.48    7.5    78.4s
+ 19   -83.42189347351   +    -Inf       -8.82    4.5    57.6s
+ 20   -83.42189347351      -13.85       -9.48    4.1    60.7s
+ 21   -83.42189347351   +    -Inf      -10.00    7.8    74.5s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2185s /  99.7%            550GiB /  99.3%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1381s   63.4%   1381s    150GiB   27.4%   150GiB
+   LOBPCG                 168    1089s   50.0%   6.48s    113GiB   20.6%   687MiB
+     DftHamiltonian...  1.14k     661s   30.4%   578ms   20.1GiB    3.7%  18.0MiB
+       local+kinetic    38.8k     394s   18.1%  10.1ms   21.3MiB    0.0%     576B
+       nonlocal         1.14k     258s   11.8%   226ms   16.0GiB    2.9%  14.4MiB
+     ortho! X vs Y      1.78k     114s    5.2%  64.1ms   13.0GiB    2.4%  7.49MiB
+       ortho!           3.75k    23.3s    1.1%  6.23ms    506MiB    0.1%   138KiB
+     Update residuals   1.14k    70.0s    3.2%  61.2ms   14.7GiB    2.7%  13.2MiB
+     rayleigh_ritz        976    45.0s    2.1%  46.1ms    839MiB    0.1%   880KiB
+       ortho!             976    138ms    0.0%   141μs    110MiB    0.0%   116KiB
+     preconditioning    1.14k    3.88s    0.2%  3.40ms   17.7MiB    0.0%  15.9KiB
+     ortho!               168    3.86s    0.2%  23.0ms   58.7MiB    0.0%   358KiB
+   energy_hamiltonian      43     101s    4.6%   2.34s   21.2GiB    3.9%   505MiB
+     ene_ops               43    98.8s    4.5%   2.30s   16.4GiB    3.0%   391MiB
+       ene_ops: non...     43    62.9s    2.9%   1.46s    891MiB    0.2%  20.7MiB
+       ene_ops: xc         43    25.9s    1.2%   601ms   13.8GiB    2.5%   328MiB
+       ene_ops: kin...     43    5.20s    0.2%   121ms   5.01MiB    0.0%   119KiB
+       ene_ops: har...     43    1.28s    0.1%  29.7ms   1.50GiB    0.3%  35.6MiB
+       ene_ops: local      43    119ms    0.0%  2.76ms    306MiB    0.1%  7.13MiB
+   compute_density         21    73.5s    3.4%   3.50s   1.02GiB    0.2%  49.9MiB
+     symmetrize_ρ          21    1.02s    0.0%  48.4ms    822MiB    0.1%  39.2MiB
+   χ0Mixing                21    34.2s    1.6%   1.63s   11.8GiB    2.2%   574MiB
+     compute_density       21    12.5s    0.6%   596ms   1.02GiB    0.2%  49.8MiB
+       symmetrize_ρ        21    477ms    0.0%  22.7ms    822MiB    0.1%  39.2MiB
+     apply_kernel         199    4.03s    0.2%  20.2ms   7.61GiB    1.4%  39.2MiB
+   ortho_qr                 8    1.16s    0.1%   145ms    418MiB    0.1%  52.3MiB
+ compute_stresses_cart      1     668s   30.7%    668s    275GiB   50.3%   275GiB
+   compute_density          1     400s   18.4%    400s    150GiB   27.4%   150GiB
+     symmetrize_ρ           1    1.69s    0.1%   1.69s    819MiB    0.1%   819MiB
+   energy_hamiltonian       1     176s    8.1%    176s   8.04GiB    1.5%  8.04GiB
+     ene_ops                1     174s    8.0%    174s   6.93GiB    1.3%  6.93GiB
+       ene_ops: non...      1     159s    7.3%    159s    133MiB    0.0%   133MiB
+       ene_ops: xc          1    11.5s    0.5%   11.5s   5.97GiB    1.1%  5.97GiB
+       ene_ops: har...      1    1.77s    0.1%   1.77s    783MiB    0.1%   783MiB
+       ene_ops: kin...      1    611ms    0.0%   611ms    422KiB    0.0%   422KiB
+       ene_ops: local       1   41.5ms    0.0%  41.5ms   71.2MiB    0.0%  71.2MiB
+   Instantiation At...      1    33.2s    1.5%   33.2s   37.4GiB    6.8%  37.4GiB
+   Instantiation Xc         1    29.0s    1.3%   29.0s   36.3GiB    6.6%  36.3GiB
+     enforce_real!          1   4.82ms    0.0%  4.82ms   5.06KiB    0.0%  5.06KiB
+   Instantiation At...      1    26.1s    1.2%   26.1s   42.2GiB    7.7%  42.2GiB
+     enforce_real!          1   4.76ms    0.0%  4.76ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Ewald      1    185ms    0.0%   185ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    185ms    0.0%   185ms   31.7KiB    0.0%  31.7KiB
+   build_kpoints            1   84.6ms    0.0%  84.6ms    108MiB    0.0%   108MiB
+   Instantiation Ha...      1   31.9ms    0.0%  31.9ms    107MiB    0.0%   107MiB
+     enforce_real!          1   4.83ms    0.0%  4.83ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Ki...      1   31.9ms    0.0%  31.9ms    109MiB    0.0%   109MiB
+   Instantiation Ps...      1   43.3μs    0.0%  43.3μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   24.9μs    0.0%  24.9μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   16.8μs    0.0%  16.8μs     0.00B    0.0%    0.00B
+ compute_forces             1     101s    4.6%    101s    103GiB   18.8%   103GiB
+   forces: nonlocal         1    68.3s    3.1%   68.3s   78.1GiB   14.3%  78.1GiB
+   forces: local            1    18.1s    0.8%   18.1s   19.8GiB    3.6%  19.8GiB
+   forces: xc               1    14.4s    0.7%   14.4s   4.70GiB    0.9%  4.70GiB
+ PlaneWaveBasis             1    27.8s    1.3%   27.8s   19.0GiB    3.5%  19.0GiB
+   Instantiation At...      1    10.2s    0.5%   10.2s   10.4GiB    1.9%  10.4GiB
+     enforce_real!          1   5.04ms    0.0%  5.04ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Xc         1    9.84s    0.5%   9.84s   4.02GiB    0.7%  4.02GiB
+     enforce_real!          1   4.89ms    0.0%  4.89ms   5.06KiB    0.0%  5.06KiB
+   Instantiation At...      1    5.70s    0.3%   5.70s   3.95GiB    0.7%  3.95GiB
+   Instantiation Ewald      1   67.3ms    0.0%  67.3ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   67.3ms    0.0%  67.3ms   4.83KiB    0.0%  4.83KiB
+   build_kpoints            1   30.7ms    0.0%  30.7ms    108MiB    0.0%   108MiB
+   Instantiation Ha...      1   9.53ms    0.0%  9.53ms   10.7MiB    0.0%  10.7MiB
+     enforce_real!          1   4.69ms    0.0%  4.69ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Ki...      1   2.88ms    0.0%  2.88ms   10.9MiB    0.0%  10.9MiB
+   Instantiation Ps...      1   70.6μs    0.0%  70.6μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   16.6μs    0.0%  16.6μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   3.23μs    0.0%  3.23μs      672B    0.0%     672B
+ enforce_real!              1   4.81ms    0.0%  4.81ms   5.06KiB    0.0%  5.06KiB
+ symmetry_operations        1    602μs    0.0%   602μs    122KiB    0.0%   122KiB
+   _check_symmetries        1   27.5μs    0.0%  27.5μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 40 / 100 ================================
+#
+#
+# 42 / 100 ================================
+#
+#
+# 43 / 100 ================================
+#
+#
+# 46 / 100 ================================
+#
+#
+# 50 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (40, 108, 108), 466560 total points
+    kgrid                : MonkhorstPack([7, 3, 3])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [7.97353   , 0.0132562 , 0.751039  ]
+                               [0.286635  , 22.3326   , -1.02349  ]
+                               [-0.0917806, -0.810242 , 22.9566   ]
+        unit cell volume     : 4082.5 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.37282220470                   -0.68   14.9     119s
+  2   -83.38701483424       -1.85       -1.05    1.0    41.4s
+  3   -83.39001254180       -2.52       -2.40    7.4    71.8s
+  4   -83.39030174441       -3.54       -2.56    8.7    85.8s
+  5   -83.39036957936       -4.17       -3.27    2.3    47.9s
+  6   -83.39037262886       -5.52       -3.37    8.0    83.2s
+  7   -83.39037406672       -5.84       -3.54    1.6    39.9s
+  8   -83.39037543341       -5.86       -4.24    3.5    54.3s
+  9   -83.39037548504       -7.29       -4.45    8.8    80.0s
+ 10   -83.39037550513       -7.70       -4.97    2.5    49.0s
+ 11   -83.39037550779       -8.58       -5.69    5.6    69.5s
+ 12   -83.39037550790       -9.95       -6.11    9.0    85.6s
+ 13   -83.39037550791      -10.94       -6.36    4.3    70.5s
+ 14   -83.39037550792      -11.44       -7.15    3.0    53.0s
+ 15   -83.39037550792      -13.07       -7.27    8.4    88.5s
+ 16   -83.39037550792      -13.37       -7.55    2.0    44.7s
+ 17   -83.39037550792   +    -Inf       -7.96    4.5    65.1s
+ 18   -83.39037550792      -13.55       -8.45    4.1    57.0s
+ 19   -83.39037550792   +  -13.55       -9.20    6.6    69.9s
+ 20   -83.39037550792   +    -Inf       -9.64    8.4    84.6s
+ 21   -83.39037550792      -13.85       -9.72    5.2    64.0s
+ 22   -83.39037550792      -13.85       -9.96    2.1    46.2s
+ 23   -83.39037550792   +  -13.85      -10.95    4.0    59.8s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2320s /  99.7%            565GiB /  99.3%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1537s   66.4%   1537s    163GiB   29.0%   163GiB
+   LOBPCG                 184    1174s   50.7%   6.38s    123GiB   22.0%   686MiB
+     DftHamiltonian...  1.15k     697s   30.1%   604ms   21.7GiB    3.9%  19.3MiB
+       local+kinetic    42.0k     408s   17.6%  9.72ms   23.1MiB    0.0%     576B
+       nonlocal         1.15k     285s   12.3%   247ms   17.6GiB    3.1%  15.6MiB
+     ortho! X vs Y      1.76k     124s    5.4%  70.7ms   14.1GiB    2.5%  8.23MiB
+       ortho!           3.69k    25.6s    1.1%  6.94ms    552MiB    0.1%   153KiB
+     Update residuals   1.15k    75.1s    3.2%  65.1ms   16.2GiB    2.9%  14.4MiB
+     rayleigh_ritz        970    50.4s    2.2%  52.0ms    912MiB    0.2%   963KiB
+       ortho!             970    149ms    0.0%   154μs    120MiB    0.0%   127KiB
+     ortho!               184    4.26s    0.2%  23.2ms   64.3MiB    0.0%   358KiB
+     preconditioning    1.15k    4.23s    0.2%  3.67ms   19.2MiB    0.0%  17.0KiB
+   energy_hamiltonian      47     110s    4.7%   2.34s   23.2GiB    4.1%   505MiB
+     ene_ops               47     108s    4.7%   2.30s   18.0GiB    3.2%   391MiB
+       ene_ops: non...     47    69.4s    3.0%   1.48s   0.95GiB    0.2%  20.8MiB
+       ene_ops: xc         47    28.4s    1.2%   604ms   15.0GiB    2.7%   328MiB
+       ene_ops: kin...     47    5.89s    0.3%   125ms   5.48MiB    0.0%   119KiB
+       ene_ops: har...     47    1.01s    0.0%  21.4ms   1.63GiB    0.3%  35.6MiB
+       ene_ops: local      47    143ms    0.0%  3.04ms    335MiB    0.1%  7.13MiB
+   compute_density         23    79.5s    3.4%   3.46s   1.12GiB    0.2%  49.9MiB
+     symmetrize_ρ          23    1.33s    0.1%  58.0ms    901MiB    0.2%  39.2MiB
+   χ0Mixing                23    35.1s    1.5%   1.53s   11.8GiB    2.1%   523MiB
+     compute_density       23    13.8s    0.6%   599ms   1.12GiB    0.2%  49.8MiB
+       symmetrize_ρ        23    1.95s    0.1%  84.6ms    901MiB    0.2%  39.2MiB
+     apply_kernel         193    3.62s    0.2%  18.7ms   7.38GiB    1.3%  39.2MiB
+   ortho_qr                 8    1.90s    0.1%   238ms    424MiB    0.1%  53.0MiB
+ compute_stresses_cart      1     657s   28.4%    657s    275GiB   49.1%   275GiB
+   compute_density          1     386s   16.7%    386s    150GiB   26.7%   150GiB
+     symmetrize_ρ           1    1.73s    0.1%   1.73s    819MiB    0.1%   819MiB
+   energy_hamiltonian       1     180s    7.8%    180s   8.04GiB    1.4%  8.04GiB
+     ene_ops                1     177s    7.6%    177s   6.93GiB    1.2%  6.93GiB
+       ene_ops: non...      1     161s    7.0%    161s    133MiB    0.0%   133MiB
+       ene_ops: xc          1    11.5s    0.5%   11.5s   5.97GiB    1.1%  5.97GiB
+       ene_ops: har...      1    1.75s    0.1%   1.75s    783MiB    0.1%   783MiB
+       ene_ops: kin...      1    558ms    0.0%   558ms    422KiB    0.0%   422KiB
+       ene_ops: local       1   44.2ms    0.0%  44.2ms   71.2MiB    0.0%  71.2MiB
+   Instantiation At...      1    32.9s    1.4%   32.9s   37.9GiB    6.8%  37.9GiB
+   Instantiation Xc         1    28.7s    1.2%   28.7s   36.3GiB    6.5%  36.3GiB
+     enforce_real!          1   4.83ms    0.0%  4.83ms   5.06KiB    0.0%  5.06KiB
+   Instantiation At...      1    26.3s    1.1%   26.3s   42.2GiB    7.5%  42.2GiB
+     enforce_real!          1   4.75ms    0.0%  4.75ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Ewald      1    186ms    0.0%   186ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    186ms    0.0%   186ms   31.7KiB    0.0%  31.7KiB
+   build_kpoints            1   85.1ms    0.0%  85.1ms    108MiB    0.0%   108MiB
+   Instantiation Ki...      1   39.3ms    0.0%  39.3ms    110MiB    0.0%   110MiB
+   Instantiation Ha...      1   31.7ms    0.0%  31.7ms    107MiB    0.0%   107MiB
+     enforce_real!          1   6.20ms    0.0%  6.20ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Ps...      1   42.8μs    0.0%  42.8μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   26.3μs    0.0%  26.3μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   17.3μs    0.0%  17.3μs     0.00B    0.0%    0.00B
+ compute_forces             1    91.8s    4.0%   91.8s    104GiB   18.5%   104GiB
+   forces: nonlocal         1    59.5s    2.6%   59.5s   79.3GiB   14.1%  79.3GiB
+   forces: local            1    18.1s    0.8%   18.1s   19.8GiB    3.5%  19.8GiB
+   forces: xc               1    14.2s    0.6%   14.2s   4.70GiB    0.8%  4.70GiB
+ PlaneWaveBasis             1    27.9s    1.2%   27.9s   19.1GiB    3.4%  19.1GiB
+   Instantiation At...      1    10.1s    0.4%   10.1s   10.4GiB    1.9%  10.4GiB
+     enforce_real!          1   5.77ms    0.0%  5.77ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Xc         1    9.83s    0.4%   9.83s   4.02GiB    0.7%  4.02GiB
+     enforce_real!          1   4.86ms    0.0%  4.86ms   5.06KiB    0.0%  5.06KiB
+   Instantiation At...      1    5.74s    0.2%   5.74s   4.01GiB    0.7%  4.01GiB
+   Instantiation Ewald      1   66.8ms    0.0%  66.8ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   66.7ms    0.0%  66.7ms   4.83KiB    0.0%  4.83KiB
+   build_kpoints            1   33.6ms    0.0%  33.6ms    108MiB    0.0%   108MiB
+   Instantiation Ha...      1   8.92ms    0.0%  8.92ms   10.7MiB    0.0%  10.7MiB
+     enforce_real!          1   4.90ms    0.0%  4.90ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Ki...      1   3.17ms    0.0%  3.17ms   11.1MiB    0.0%  11.1MiB
+   Instantiation Ps...      1   40.4μs    0.0%  40.4μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   16.4μs    0.0%  16.4μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   2.50μs    0.0%  2.50μs      672B    0.0%     672B
+ enforce_real!              1   4.82ms    0.0%  4.82ms   5.06KiB    0.0%  5.06KiB
+ symmetry_operations        1    552μs    0.0%   552μs    122KiB    0.0%   122KiB
+   _check_symmetries        1   17.4μs    0.0%  17.4μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 51 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (40, 120, 120), 576000 total points
+    kgrid                : MonkhorstPack([7, 3, 3])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [7.89562   , 0.719101  , -0.157077 ]
+                               [0.155647  , 23.3317   , -0.00614881]
+                               [-0.110126 , -0.0408738, 23.3601   ]
+        unit cell volume     : 4300.3 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.37443269487                   -0.69   15.1     140s
+  2   -83.39021597971       -1.80       -1.05    1.6    51.9s
+  3   -83.39330681851       -2.51       -2.41    7.8    89.2s
+  4   -83.39358764399       -3.55       -2.55    7.6     102s
+  5   -83.39368534463       -4.01       -3.14    2.1    60.5s
+  6   -83.39369252025       -5.14       -3.38    6.0    90.9s
+  7   -83.39369350980       -6.00       -3.48    2.5    56.9s
+  8   -83.39369544375       -5.71       -4.40    2.4    58.4s
+  9   -83.39369549468       -7.29       -4.55    8.7     105s
+ 10   -83.39369550435       -8.01       -5.12    2.3    56.2s
+ 11   -83.39369550526       -9.04       -5.40    6.2    86.5s
+ 12   -83.39369550546       -9.71       -5.67    3.3    56.7s
+ 13   -83.39369550555      -10.04       -6.16    3.8    73.8s
+ 14   -83.39369550556      -11.18       -6.49    5.1    73.6s
+ 15   -83.39369550556      -11.94       -6.86    4.4    68.9s
+ 16   -83.39369550556      -12.89       -7.49    4.3    79.5s
+ 17   -83.39369550556      -13.15       -7.73    6.9    84.6s
+ 18   -83.39369550556      -13.55       -8.50    3.0    58.0s
+ 19   -83.39369550556      -13.55       -8.51    6.4    91.6s
+ 20   -83.39369550556   +    -Inf       -8.81    1.6    49.3s
+ 21   -83.39369550556   +  -13.85       -9.23    3.6    71.5s
+ 22   -83.39369550556      -13.85       -9.55    3.6    68.0s
+ 23   -83.39369550556   +  -13.85       -9.99    4.1    64.2s
+ 24   -83.39369550556   +  -13.85      -10.85    4.3    81.9s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2989s /  99.7%            661GiB /  99.2%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1828s   61.3%   1828s    183GiB   27.9%   183GiB
+   LOBPCG                 192    1310s   44.0%   6.82s    131GiB   20.0%   700MiB
+     DftHamiltonian...  1.14k     808s   27.1%   709ms   23.7GiB    3.6%  21.3MiB
+       local+kinetic    42.6k     494s   16.6%  11.6ms   23.4MiB    0.0%     576B
+       nonlocal         1.14k     309s   10.4%   271ms   18.7GiB    2.9%  16.8MiB
+     ortho! X vs Y      1.70k     126s    4.2%  73.7ms   14.1GiB    2.2%  8.48MiB
+       ortho!           3.65k    27.1s    0.9%  7.42ms    559MiB    0.1%   157KiB
+     Update residuals   1.14k    66.1s    2.2%  58.0ms   17.3GiB    2.6%  15.5MiB
+     rayleigh_ritz        948    52.2s    1.8%  55.0ms    912MiB    0.1%  0.96MiB
+       ortho!             948    211ms    0.0%   223μs    122MiB    0.0%   132KiB
+     ortho!               192    4.74s    0.2%  24.7ms   68.9MiB    0.0%   368KiB
+     preconditioning    1.14k    4.63s    0.2%  4.06ms   19.4MiB    0.0%  17.4KiB
+   energy_hamiltonian      49     154s    5.2%   3.15s   29.6GiB    4.5%   619MiB
+     ene_ops               49     138s    4.6%   2.82s   22.9GiB    3.5%   478MiB
+       ene_ops: non...     49    76.6s    2.6%   1.56s   1.01GiB    0.2%  21.1MiB
+       ene_ops: xc         49    32.9s    1.1%   672ms   19.3GiB    2.9%   404MiB
+       ene_ops: kin...     49    14.9s    0.5%   303ms   5.79MiB    0.0%   121KiB
+       ene_ops: har...     49    5.76s    0.2%   117ms   2.10GiB    0.3%  44.0MiB
+       ene_ops: local      49    198ms    0.0%  4.04ms    431MiB    0.1%  8.80MiB
+   compute_density         24     113s    3.8%   4.71s   1.44GiB    0.2%  61.5MiB
+     symmetrize_ρ          24    1.52s    0.1%  63.5ms   1.13GiB    0.2%  48.3MiB
+   χ0Mixing                24    42.5s    1.4%   1.77s   15.7GiB    2.4%   669MiB
+     compute_density       24    24.2s    0.8%   1.01s   1.44GiB    0.2%  61.5MiB
+       symmetrize_ρ        24    661ms    0.0%  27.6ms   1.13GiB    0.2%  48.3MiB
+     apply_kernel         211    14.8s    0.5%  70.1ms   10.0GiB    1.5%  48.3MiB
+   ortho_qr                16    2.58s    0.1%   161ms    899MiB    0.1%  56.2MiB
+ compute_stresses_cart      1    1018s   34.2%   1018s    336GiB   51.1%   336GiB
+   compute_density          1     707s   23.7%    707s    188GiB   28.6%   188GiB
+     symmetrize_ρ           1    3.06s    0.1%   3.06s   0.99GiB    0.2%  0.99GiB
+   energy_hamiltonian       1     202s    6.8%    202s   9.90GiB    1.5%  9.90GiB
+     ene_ops                1     198s    6.7%    198s   8.53GiB    1.3%  8.53GiB
+       ene_ops: non...      1     173s    5.8%    173s    135MiB    0.0%   135MiB
+       ene_ops: xc          1    19.2s    0.6%   19.2s   7.36GiB    1.1%  7.36GiB
+       ene_ops: har...      1    2.76s    0.1%   2.76s   0.94GiB    0.1%  0.94GiB
+       ene_ops: kin...      1    704ms    0.0%   704ms    428KiB    0.0%   428KiB
+       ene_ops: local       1    131ms    0.0%   131ms   87.9MiB    0.0%  87.9MiB
+   Instantiation Xc         1    36.5s    1.2%   36.5s   44.8GiB    6.8%  44.8GiB
+     enforce_real!          1   7.45ms    0.0%  7.45ms   5.41KiB    0.0%  5.41KiB
+   Instantiation At...      1    34.5s    1.2%   34.5s   39.9GiB    6.1%  39.9GiB
+   Instantiation At...      1    34.4s    1.2%   34.4s   52.0GiB    7.9%  52.0GiB
+     enforce_real!          1   5.77ms    0.0%  5.77ms   5.41KiB    0.0%  5.41KiB
+   build_kpoints            1    475ms    0.0%   475ms    132MiB    0.0%   132MiB
+   Instantiation Ewald      1    186ms    0.0%   186ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    186ms    0.0%   186ms   31.7KiB    0.0%  31.7KiB
+   Instantiation Ki...      1   58.5ms    0.0%  58.5ms    116MiB    0.0%   116MiB
+   Instantiation Ha...      1   35.7ms    0.0%  35.7ms    132MiB    0.0%   132MiB
+     enforce_real!          1   7.87ms    0.0%  7.87ms   5.41KiB    0.0%  5.41KiB
+   Instantiation Ps...      1   42.0μs    0.0%  42.0μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   17.7μs    0.0%  17.7μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   16.5μs    0.0%  16.5μs     0.00B    0.0%    0.00B
+ compute_forces             1     102s    3.4%    102s    115GiB   17.5%   115GiB
+   forces: nonlocal         1    65.5s    2.2%   65.5s   84.5GiB   12.9%  84.5GiB
+   forces: local            1    22.3s    0.7%   22.3s   24.5GiB    3.7%  24.5GiB
+   forces: xc               1    14.1s    0.5%   14.1s   5.81GiB    0.9%  5.81GiB
+ PlaneWaveBasis             1    32.7s    1.1%   32.7s   22.8GiB    3.5%  22.8GiB
+   Instantiation At...      1    12.5s    0.4%   12.5s   12.9GiB    2.0%  12.9GiB
+     enforce_real!          1   6.58ms    0.0%  6.58ms   5.41KiB    0.0%  5.41KiB
+   Instantiation Xc         1    11.7s    0.4%   11.7s   4.97GiB    0.8%  4.97GiB
+     enforce_real!          1   7.23ms    0.0%  7.23ms   5.41KiB    0.0%  5.41KiB
+   Instantiation At...      1    6.03s    0.2%   6.03s   4.22GiB    0.6%  4.22GiB
+   build_kpoints            1    492ms    0.0%   492ms    132MiB    0.0%   132MiB
+   Instantiation Ewald      1   66.3ms    0.0%  66.3ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   66.3ms    0.0%  66.3ms   4.83KiB    0.0%  4.83KiB
+   Instantiation Ha...      1   10.5ms    0.0%  10.5ms   13.2MiB    0.0%  13.2MiB
+     enforce_real!          1   5.73ms    0.0%  5.73ms   5.41KiB    0.0%  5.41KiB
+   Instantiation Ki...      1   3.46ms    0.0%  3.46ms   11.6MiB    0.0%  11.6MiB
+   Instantiation Ps...      1   39.0μs    0.0%  39.0μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   16.3μs    0.0%  16.3μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   2.48μs    0.0%  2.48μs      672B    0.0%     672B
+ enforce_real!              1   5.98ms    0.0%  5.98ms   5.41KiB    0.0%  5.41KiB
+ symmetry_operations        1    551μs    0.0%   551μs    122KiB    0.0%   122KiB
+   _check_symmetries        1   12.4μs    0.0%  12.4μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 53 / 100 ================================
+#
+#
+# 56 / 100 ================================
+#
+#
+# 59 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (120, 40, 108), 518400 total points
+    kgrid                : MonkhorstPack([3, 7, 3])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [23.2926   , -0.0239671, -0.388035 ]
+                               [0.444692  , 7.60887   , -0.397282 ]
+                               [0.288583  , -0.00654412, 22.9749   ]
+        unit cell volume     : 4072.9 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.41389732571                   -0.69   15.4     127s
+  2   -83.42461411170       -1.97       -1.06    1.1    47.4s
+  3   -83.42683374233       -2.65       -2.57    7.6    79.7s
+  4   -83.42706762539       -3.63       -2.80   10.6     107s
+  5   -83.42709162711       -4.62       -3.50    2.7    57.4s
+  6   -83.42709268688       -5.97       -3.64    8.5    91.7s
+  7   -83.42709299773       -6.51       -3.75    1.8    49.6s
+  8   -83.42709351735       -6.28       -4.62    2.9    56.0s
+  9   -83.42709352838       -7.96       -4.69   10.0     102s
+ 10   -83.42709353497       -8.18       -5.16    2.0    51.8s
+ 11   -83.42709353593       -9.01       -5.50    5.0    78.9s
+ 12   -83.42709353605       -9.92       -5.74    4.2    58.0s
+ 13   -83.42709353612      -10.21       -6.70    3.8    61.6s
+ 14   -83.42709353612      -12.00       -6.76    9.6     105s
+ 15   -83.42709353612      -12.30       -7.04    1.9    50.4s
+ 16   -83.42709353612      -12.70       -7.53    4.0    68.1s
+ 17   -83.42709353612   +    -Inf       -7.83    6.0    74.4s
+ 18   -83.42709353612   +    -Inf       -8.28    4.0    58.9s
+ 19   -83.42709353612      -13.85       -8.66    5.0    75.7s
+ 20   -83.42709353612   +  -13.85       -8.90    5.5    66.1s
+ 21   -83.42709353612      -13.55       -9.61    3.9    67.3s
+ 22   -83.42709353612   +  -13.85       -9.81    8.0    88.3s
+ 23   -83.42709353612   +    -Inf      -10.64    4.2    64.9s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2568s /  99.7%            599GiB /  99.3%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1695s   66.2%   1695s    166GiB   28.0%   166GiB
+   LOBPCG                 184    1277s   49.9%   6.94s    123GiB   20.7%   684MiB
+     DftHamiltonian...  1.25k     807s   31.5%   647ms   22.4GiB    3.8%  18.4MiB
+       local+kinetic    41.8k     508s   19.8%  12.2ms   22.9MiB    0.0%     576B
+       nonlocal         1.25k     295s   11.5%   237ms   17.5GiB    2.9%  14.3MiB
+     ortho! X vs Y      1.94k     120s    4.7%  61.6ms   13.9GiB    2.3%  7.31MiB
+       ortho!           4.05k    25.1s    1.0%  6.18ms    537MiB    0.1%   136KiB
+     Update residuals   1.25k    79.4s    3.1%  63.7ms   16.1GiB    2.7%  13.2MiB
+     rayleigh_ritz      1.06k    47.9s    1.9%  45.0ms    889MiB    0.1%   857KiB
+       ortho!           1.06k    150ms    0.0%   141μs    118MiB    0.0%   114KiB
+     ortho!               184    4.35s    0.2%  23.7ms   64.3MiB    0.0%   358KiB
+     preconditioning    1.25k    4.26s    0.2%  3.42ms   19.1MiB    0.0%  15.7KiB
+   energy_hamiltonian      47     117s    4.6%   2.49s   25.7GiB    4.3%   559MiB
+     ene_ops               47     113s    4.4%   2.41s   19.8GiB    3.3%   432MiB
+       ene_ops: non...     47    69.5s    2.7%   1.48s   0.95GiB    0.2%  20.8MiB
+       ene_ops: xc         47    29.7s    1.2%   632ms   16.7GiB    2.8%   364MiB
+       ene_ops: kin...     47    7.54s    0.3%   161ms   5.48MiB    0.0%   119KiB
+       ene_ops: har...     47    1.62s    0.1%  34.4ms   1.82GiB    0.3%  39.6MiB
+       ene_ops: local      47    199ms    0.0%  4.24ms    372MiB    0.1%  7.92MiB
+   compute_density         23     101s    3.9%   4.39s   1.24GiB    0.2%  55.4MiB
+     symmetrize_ρ          23    1.11s    0.0%  48.3ms   0.98GiB    0.2%  43.5MiB
+   χ0Mixing                23    40.3s    1.6%   1.75s   12.8GiB    2.1%   568MiB
+     compute_density       23    22.7s    0.9%   986ms   1.24GiB    0.2%  55.4MiB
+       symmetrize_ρ        23    6.61s    0.3%   287ms   0.98GiB    0.2%  43.5MiB
+     apply_kernel         187    13.6s    0.5%  72.6ms   7.95GiB    1.3%  43.5MiB
+   ortho_qr                 8    1.03s    0.0%   128ms    423MiB    0.1%  52.9MiB
+ compute_stresses_cart      1     738s   28.8%    738s    302GiB   50.7%   302GiB
+   compute_density          1     453s   17.7%    453s    167GiB   28.0%   167GiB
+     symmetrize_ρ           1    2.09s    0.1%   2.09s    910MiB    0.1%   910MiB
+   energy_hamiltonian       1     186s    7.3%    186s   8.92GiB    1.5%  8.92GiB
+     ene_ops                1     183s    7.1%    183s   7.69GiB    1.3%  7.69GiB
+       ene_ops: non...      1     162s    6.3%    162s    133MiB    0.0%   133MiB
+       ene_ops: xc          1    14.5s    0.6%   14.5s   6.63GiB    1.1%  6.63GiB
+       ene_ops: har...      1    1.76s    0.1%   1.76s    870MiB    0.1%   870MiB
+       ene_ops: kin...      1    933ms    0.0%   933ms    422KiB    0.0%   422KiB
+       ene_ops: local       1   43.5ms    0.0%  43.5ms   79.1MiB    0.0%  79.1MiB
+   Instantiation At...      1    33.6s    1.3%   33.6s   37.8GiB    6.4%  37.8GiB
+   Instantiation Xc         1    32.1s    1.3%   32.1s   40.3GiB    6.8%  40.3GiB
+     enforce_real!          1   5.40ms    0.0%  5.40ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    29.9s    1.2%   29.9s   46.9GiB    7.9%  46.9GiB
+     enforce_real!          1   5.34ms    0.0%  5.34ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ewald      1    188ms    0.0%   188ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    188ms    0.0%   188ms   31.7KiB    0.0%  31.7KiB
+   build_kpoints            1   94.0ms    0.0%  94.0ms    119MiB    0.0%   119MiB
+   Instantiation Ki...      1   39.5ms    0.0%  39.5ms    110MiB    0.0%   110MiB
+   Instantiation Ha...      1   38.5ms    0.0%  38.5ms    119MiB    0.0%   119MiB
+     enforce_real!          1   5.90ms    0.0%  5.90ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ps...      1   40.9μs    0.0%  40.9μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   29.1μs    0.0%  29.1μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   16.8μs    0.0%  16.8μs     0.00B    0.0%    0.00B
+ compute_forces             1    98.6s    3.9%   98.6s    106GiB   17.9%   106GiB
+   forces: nonlocal         1    66.1s    2.6%   66.1s   79.1GiB   13.3%  79.1GiB
+   forces: local            1    20.2s    0.8%   20.2s   22.0GiB    3.7%  22.0GiB
+   forces: xc               1    12.3s    0.5%   12.3s   5.23GiB    0.9%  5.23GiB
+ PlaneWaveBasis             1    29.4s    1.1%   29.4s   20.7GiB    3.5%  20.7GiB
+   Instantiation At...      1    11.3s    0.4%   11.3s   11.6GiB    1.9%  11.6GiB
+     enforce_real!          1   5.33ms    0.0%  5.33ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Xc         1    10.4s    0.4%   10.4s   4.47GiB    0.8%  4.47GiB
+     enforce_real!          1   5.45ms    0.0%  5.45ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    5.77s    0.2%   5.77s   4.00GiB    0.7%  4.00GiB
+   build_kpoints            1    711ms    0.0%   711ms    119MiB    0.0%   119MiB
+   Instantiation Ewald      1   66.1ms    0.0%  66.1ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   66.1ms    0.0%  66.1ms   4.83KiB    0.0%  4.83KiB
+   Instantiation Ki...      1   12.4ms    0.0%  12.4ms   11.0MiB    0.0%  11.0MiB
+   Instantiation Ha...      1   11.1ms    0.0%  11.1ms   11.9MiB    0.0%  11.9MiB
+     enforce_real!          1   5.22ms    0.0%  5.22ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ps...      1   47.5μs    0.0%  47.5μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   16.4μs    0.0%  16.4μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   3.67μs    0.0%  3.67μs      672B    0.0%     672B
+ enforce_real!              1   5.35ms    0.0%  5.35ms   5.23KiB    0.0%  5.23KiB
+ symmetry_operations        1    554μs    0.0%   554μs    122KiB    0.0%   122KiB
+   _check_symmetries        1   14.0μs    0.0%  14.0μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 61 / 100 ================================
+#
+#
+# 62 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (120, 108, 40), 518400 total points
+    kgrid                : MonkhorstPack([3, 3, 7])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [23.1122   , -0.0238988, 0.00146012]
+                               [-0.173324 , 22.9476   , 0.0583494 ]
+                               [0.00598584, -0.0394633, 7.6817    ]
+        unit cell volume     : 4074.2 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.41754029679                   -0.69   13.2     119s
+  2   -83.42758250361       -2.00       -1.06    1.2    51.1s
+  3   -83.42982626421       -2.65       -2.62    6.8    86.7s
+  4   -83.43021045598       -3.42       -3.05    8.6     120s
+  5   -83.43021309913       -5.58       -3.55    4.2    68.7s
+  6   -83.43021347857       -6.42       -4.22    4.6    79.4s
+  7   -83.43021350661       -7.55       -4.84    7.0    90.4s
+  8   -83.43021351253       -8.23       -5.31    5.5    85.9s
+  9   -83.43021351347       -9.03       -5.97    5.0    82.7s
+ 10   -83.43021351350      -10.56       -6.51    7.0    95.6s
+ 11   -83.43021351350      -11.90       -7.25    5.3    83.2s
+ 12   -83.43021351350      -13.85       -7.68    8.0     102s
+ 13   -83.43021351350      -13.55       -8.27    4.1    75.4s
+ 14   -83.43021351350   +    -Inf       -8.77    5.9    91.5s
+ 15   -83.43021351350   +    -Inf       -9.27    5.7    82.5s
+ 16   -83.43021351350   +    -Inf       -9.78    4.5    84.7s
+ 17   -83.43021351350      -13.85      -10.19    5.3    77.9s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2367s /  99.7%            578GiB /  99.2%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1483s   62.8%   1483s    142GiB   24.7%   142GiB
+   LOBPCG                 136    1053s   44.6%   7.74s    108GiB   18.9%   817MiB
+     DftHamiltonian...  1.00k     651s   27.6%   650ms   19.1GiB    3.3%  19.5MiB
+       local+kinetic    36.1k     398s   16.9%  11.0ms   19.9MiB    0.0%     576B
+       nonlocal         1.00k     247s   10.5%   247ms   15.1GiB    2.6%  15.5MiB
+     ortho! X vs Y      1.59k     115s    4.9%  72.1ms   14.3GiB    2.5%  9.19MiB
+       ortho!           3.39k    22.6s    1.0%  6.67ms    537MiB    0.1%   162KiB
+     Update residuals   1.00k    52.3s    2.2%  52.2ms   13.9GiB    2.4%  14.2MiB
+     rayleigh_ritz        865    46.6s    2.0%  53.9ms    883MiB    0.2%  1.02MiB
+       ortho!             865    132ms    0.0%   153μs    110MiB    0.0%   130KiB
+     preconditioning    1.00k    3.48s    0.1%  3.48ms   16.5MiB    0.0%  16.9KiB
+     ortho!               136    3.12s    0.1%  23.0ms   48.8MiB    0.0%   368KiB
+   energy_hamiltonian      35    92.6s    3.9%   2.65s   19.1GiB    3.3%   559MiB
+     ene_ops               35    89.8s    3.8%   2.57s   14.8GiB    2.6%   432MiB
+       ene_ops: non...     35    53.1s    2.2%   1.52s    731MiB    0.1%  20.9MiB
+       ene_ops: xc         35    21.0s    0.9%   599ms   12.4GiB    2.2%   364MiB
+       ene_ops: kin...     35    8.42s    0.4%   241ms   4.11MiB    0.0%   120KiB
+       ene_ops: har...     35    1.06s    0.0%  30.4ms   1.35GiB    0.2%  39.6MiB
+       ene_ops: local      35    402ms    0.0%  11.5ms    277MiB    0.0%  7.92MiB
+   compute_density         17    80.3s    3.4%   4.72s    942MiB    0.2%  55.4MiB
+     symmetrize_ρ          17    473ms    0.0%  27.8ms    740MiB    0.1%  43.5MiB
+   χ0Mixing                17    31.2s    1.3%   1.84s   9.52GiB    1.7%   574MiB
+     compute_density       17    20.0s    0.8%   1.18s    941MiB    0.2%  55.4MiB
+       symmetrize_ρ        17    5.32s    0.2%   313ms    740MiB    0.1%  43.5MiB
+     apply_kernel         140    9.66s    0.4%  69.0ms   5.95GiB    1.0%  43.5MiB
+   ortho_qr                16    2.84s    0.1%   177ms    852MiB    0.1%  53.3MiB
+ compute_stresses_cart      1     749s   31.8%    749s    304GiB   53.0%   304GiB
+   compute_density          1     455s   19.3%    455s    169GiB   29.5%   169GiB
+     symmetrize_ρ           1    2.31s    0.1%   2.31s    910MiB    0.2%   910MiB
+   energy_hamiltonian       1     188s    8.0%    188s   8.92GiB    1.6%  8.92GiB
+     ene_ops                1     185s    7.8%    185s   7.69GiB    1.3%  7.69GiB
+       ene_ops: non...      1     164s    6.9%    164s    135MiB    0.0%   135MiB
+       ene_ops: xc          1    16.0s    0.7%   16.0s   6.63GiB    1.2%  6.63GiB
+       ene_ops: har...      1    1.99s    0.1%   1.99s    870MiB    0.1%   870MiB
+       ene_ops: kin...      1    785ms    0.0%   785ms    428KiB    0.0%   428KiB
+       ene_ops: local       1   35.9ms    0.0%  35.9ms   79.1MiB    0.0%  79.1MiB
+   Instantiation At...      1    38.7s    1.6%   38.7s   37.8GiB    6.6%  37.8GiB
+   Instantiation Xc         1    33.5s    1.4%   33.5s   40.3GiB    7.0%  40.3GiB
+     enforce_real!          1   5.33ms    0.0%  5.33ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    31.7s    1.3%   31.7s   46.9GiB    8.2%  46.9GiB
+     enforce_real!          1   5.30ms    0.0%  5.30ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ewald      1    186ms    0.0%   186ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    186ms    0.0%   186ms   31.7KiB    0.0%  31.7KiB
+   build_kpoints            1   90.6ms    0.0%  90.6ms    119MiB    0.0%   119MiB
+   Instantiation Ki...      1   53.4ms    0.0%  53.4ms    110MiB    0.0%   110MiB
+   Instantiation Ha...      1   40.0ms    0.0%  40.0ms    119MiB    0.0%   119MiB
+     enforce_real!          1   5.95ms    0.0%  5.95ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ps...      1   57.9μs    0.0%  57.9μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   37.4μs    0.0%  37.4μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   16.6μs    0.0%  16.6μs     0.00B    0.0%    0.00B
+ compute_forces             1    98.4s    4.2%   98.4s    107GiB   18.7%   107GiB
+   forces: nonlocal         1    65.2s    2.8%   65.2s   80.1GiB   14.0%  80.1GiB
+   forces: local            1    20.0s    0.8%   20.0s   22.0GiB    3.8%  22.0GiB
+   forces: xc               1    13.2s    0.6%   13.2s   5.23GiB    0.9%  5.23GiB
+ PlaneWaveBasis             1    29.6s    1.3%   29.6s   20.7GiB    3.6%  20.7GiB
+   Instantiation At...      1    11.3s    0.5%   11.3s   11.6GiB    2.0%  11.6GiB
+     enforce_real!          1   5.53ms    0.0%  5.53ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Xc         1    10.3s    0.4%   10.3s   4.47GiB    0.8%  4.47GiB
+     enforce_real!          1   5.40ms    0.0%  5.40ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    5.77s    0.2%   5.77s   4.00GiB    0.7%  4.00GiB
+   build_kpoints            1    451ms    0.0%   451ms    119MiB    0.0%   119MiB
+   Instantiation Ewald      1   65.9ms    0.0%  65.9ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   65.9ms    0.0%  65.9ms   4.83KiB    0.0%  4.83KiB
+   Instantiation Ha...      1   10.4ms    0.0%  10.4ms   11.9MiB    0.0%  11.9MiB
+     enforce_real!          1   5.21ms    0.0%  5.21ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ki...      1   3.25ms    0.0%  3.25ms   11.0MiB    0.0%  11.0MiB
+   Instantiation Ps...      1   40.6μs    0.0%  40.6μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   16.5μs    0.0%  16.5μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   3.03μs    0.0%  3.03μs      672B    0.0%     672B
+ enforce_real!              1   5.33ms    0.0%  5.33ms   5.23KiB    0.0%  5.23KiB
+ symmetry_operations        1    557μs    0.0%   557μs    122KiB    0.0%   122KiB
+   _check_symmetries        1   16.2μs    0.0%  16.2μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 65 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (120, 108, 40), 518400 total points
+    kgrid                : MonkhorstPack([3, 3, 7])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [23.2      , -0.253153 , -0.0532877]
+                               [0.155328  , 23.0139   , 0.0401572 ]
+                               [0.185165  , 0.23797   , 7.67209   ]
+        unit cell volume     : 4096.6 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.41011149768                   -0.69   14.6     130s
+  2   -83.42551082992       -1.81       -1.06    1.1    51.2s
+  3   -83.42740757420       -2.72       -2.59    6.8    83.1s
+  4   -83.42764260591       -3.63       -2.85    8.2     115s
+  5   -83.42765786429       -4.82       -3.65    2.6    60.5s
+  6   -83.42765834575       -6.32       -3.75    7.7     107s
+  7   -83.42765853574       -6.72       -3.85    1.5    50.3s
+  8   -83.42765894362       -6.39       -4.88    2.6    61.8s
+  9   -83.42765894972       -8.21       -5.00    9.4     119s
+ 10   -83.42765895147       -8.76       -5.37    1.9    48.6s
+ 11   -83.42765895198       -9.29       -6.05    4.0    68.3s
+ 12   -83.42765895200      -10.66       -6.41    6.9    81.8s
+ 13   -83.42765895200      -11.42       -7.17    3.7    78.1s
+ 14   -83.42765895200      -12.89       -7.49    7.9     104s
+ 15   -83.42765895200      -13.25       -8.08    3.9    72.2s
+ 16   -83.42765895200   +  -13.85       -8.69    5.3    91.2s
+ 17   -83.42765895200   +    -Inf       -9.07    6.6    91.5s
+ 18   -83.42765895200   +  -13.85       -9.40    4.1    80.1s
+ 19   -83.42765895200   +    -Inf      -10.01    4.1    74.2s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2461s /  99.7%            586GiB /  99.2%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1575s   64.2%   1575s    149GiB   25.6%   149GiB
+   LOBPCG                 152    1217s   49.6%   8.00s    113GiB   19.4%   760MiB
+     DftHamiltonian...    988     753s   30.7%   762ms   19.8GiB    3.4%  20.5MiB
+       local+kinetic    37.8k     471s   19.2%  12.5ms   20.8MiB    0.0%     576B
+       nonlocal           988     275s   11.2%   278ms   15.9GiB    2.7%  16.5MiB
+     ortho! X vs Y      1.52k     122s    5.0%  80.5ms   14.0GiB    2.4%  9.43MiB
+       ortho!           3.25k    24.4s    1.0%  7.50ms    549MiB    0.1%   173KiB
+     Update residuals     988    61.8s    2.5%  62.6ms   14.6GiB    2.5%  15.2MiB
+     rayleigh_ritz        836    50.2s    2.0%  60.1ms    900MiB    0.2%  1.08MiB
+       ortho!             836    144ms    0.0%   172μs    114MiB    0.0%   140KiB
+     preconditioning      988    4.06s    0.2%  4.11ms   17.2MiB    0.0%  17.8KiB
+     ortho!               152    3.59s    0.1%  23.6ms   54.6MiB    0.0%   368KiB
+   energy_hamiltonian      39     101s    4.1%   2.60s   21.3GiB    3.7%   559MiB
+     ene_ops               39    98.4s    4.0%   2.52s   16.5GiB    2.8%   433MiB
+       ene_ops: non...     39    59.7s    2.4%   1.53s    817MiB    0.1%  21.0MiB
+       ene_ops: xc         39    26.5s    1.1%   681ms   13.9GiB    2.4%   364MiB
+       ene_ops: kin...     39    7.03s    0.3%   180ms   4.59MiB    0.0%   121KiB
+       ene_ops: har...     39    1.38s    0.1%  35.4ms   1.51GiB    0.3%  39.6MiB
+       ene_ops: local      39    160ms    0.0%  4.11ms    309MiB    0.1%  7.92MiB
+   compute_density         19    90.8s    3.7%   4.78s   1.03GiB    0.2%  55.4MiB
+     symmetrize_ρ          19    764ms    0.0%  40.2ms    827MiB    0.1%  43.5MiB
+   χ0Mixing                19    36.7s    1.5%   1.93s   10.2GiB    1.8%   551MiB
+     compute_density       19    22.7s    0.9%   1.20s   1.03GiB    0.2%  55.4MiB
+       symmetrize_ρ        19    7.30s    0.3%   384ms    827MiB    0.1%  43.5MiB
+     apply_kernel         148    11.7s    0.5%  78.9ms   6.29GiB    1.1%  43.5MiB
+   ortho_qr                16    3.23s    0.1%   202ms    857MiB    0.1%  53.6MiB
+ compute_stresses_cart      1     749s   30.5%    749s    304GiB   52.3%   304GiB
+   compute_density          1     456s   18.6%    456s    169GiB   29.1%   169GiB
+     symmetrize_ρ           1    2.34s    0.1%   2.34s    910MiB    0.2%   910MiB
+   energy_hamiltonian       1     188s    7.7%    188s   8.92GiB    1.5%  8.92GiB
+     ene_ops                1     185s    7.5%    185s   7.69GiB    1.3%  7.69GiB
+       ene_ops: non...      1     164s    6.7%    164s    135MiB    0.0%   135MiB
+       ene_ops: xc          1    14.0s    0.6%   14.0s   6.63GiB    1.1%  6.63GiB
+       ene_ops: har...      1    1.70s    0.1%   1.70s    870MiB    0.1%   870MiB
+       ene_ops: kin...      1    599ms    0.0%   599ms    428KiB    0.0%   428KiB
+       ene_ops: local       1   38.6ms    0.0%  38.6ms   79.1MiB    0.0%  79.1MiB
+   Instantiation At...      1    37.9s    1.5%   37.9s   38.1GiB    6.5%  38.1GiB
+   Instantiation Xc         1    33.6s    1.4%   33.6s   40.3GiB    6.9%  40.3GiB
+     enforce_real!          1   5.31ms    0.0%  5.31ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    31.6s    1.3%   31.6s   46.9GiB    8.1%  46.9GiB
+     enforce_real!          1   5.31ms    0.0%  5.31ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ewald      1    186ms    0.0%   186ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    186ms    0.0%   186ms   31.7KiB    0.0%  31.7KiB
+   build_kpoints            1   98.9ms    0.0%  98.9ms    119MiB    0.0%   119MiB
+   Instantiation Ha...      1   45.3ms    0.0%  45.3ms    119MiB    0.0%   119MiB
+     enforce_real!          1   6.21ms    0.0%  6.21ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ki...      1   45.0ms    0.0%  45.0ms    111MiB    0.0%   111MiB
+   Instantiation Ps...      1   49.2μs    0.0%  49.2μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   21.7μs    0.0%  21.7μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   16.8μs    0.0%  16.8μs     0.00B    0.0%    0.00B
+ compute_forces             1     101s    4.1%    101s    108GiB   18.5%   108GiB
+   forces: nonlocal         1    66.8s    2.7%   66.8s   80.5GiB   13.8%  80.5GiB
+   forces: local            1    20.5s    0.8%   20.5s   22.0GiB    3.8%  22.0GiB
+   forces: xc               1    13.4s    0.5%   13.4s   5.23GiB    0.9%  5.23GiB
+ PlaneWaveBasis             1    30.0s    1.2%   30.0s   20.7GiB    3.6%  20.7GiB
+   Instantiation At...      1    11.6s    0.5%   11.6s   11.6GiB    2.0%  11.6GiB
+     enforce_real!          1   5.57ms    0.0%  5.57ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Xc         1    10.4s    0.4%   10.4s   4.47GiB    0.8%  4.47GiB
+     enforce_real!          1   5.41ms    0.0%  5.41ms   5.23KiB    0.0%  5.23KiB
+   Instantiation At...      1    6.18s    0.3%   6.18s   4.02GiB    0.7%  4.02GiB
+   build_kpoints            1    507ms    0.0%   507ms    119MiB    0.0%   119MiB
+   Instantiation Ewald      1   66.1ms    0.0%  66.1ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   66.1ms    0.0%  66.1ms   4.83KiB    0.0%  4.83KiB
+   Instantiation Ha...      1   10.2ms    0.0%  10.2ms   11.9MiB    0.0%  11.9MiB
+     enforce_real!          1   5.18ms    0.0%  5.18ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ki...      1   3.64ms    0.0%  3.64ms   11.1MiB    0.0%  11.1MiB
+   Instantiation Ps...      1   53.0μs    0.0%  53.0μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   16.3μs    0.0%  16.3μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   5.08μs    0.0%  5.08μs      672B    0.0%     672B
+ enforce_real!              1   5.31ms    0.0%  5.31ms   5.23KiB    0.0%  5.23KiB
+ symmetry_operations        1    555μs    0.0%   555μs    122KiB    0.0%   122KiB
+   _check_symmetries        1   18.2μs    0.0%  18.2μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 66 / 100 ================================
+#
+#
+# 73 / 100 ================================
+#
+#
+# 80 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (108, 108, 36), 419904 total points
+    kgrid                : MonkhorstPack([3, 3, 7])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [21.9924   , 0.80873   , -0.0863769]
+                               [0.224365  , 22.8736   , -0.0673972]
+                               [-0.282486 , 0.545472  , 7.36858   ]
+        unit cell volume     : 3705.7 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.35236584352                   -0.67   14.6     103s
+  2   -83.36543883854       -1.88       -1.05    1.0    39.8s
+  3   -83.36994363564       -2.35       -2.16    7.6    73.8s
+  4   -83.37046636253       -3.28       -2.36    6.4    73.4s
+  5   -83.37070058955       -3.63       -3.17    3.0    49.9s
+  6   -83.37070183273       -5.91       -3.15    9.2    91.7s
+  7   -83.37070540485       -5.45       -3.28    1.2    39.5s
+  8   -83.37071079877       -5.27       -4.12    3.1    55.0s
+  9   -83.37071090600       -6.97       -4.38    8.8    89.8s
+ 10   -83.37071091190       -8.23       -4.77    2.8    57.2s
+ 11   -83.37071091460       -8.57       -5.16    4.8    60.3s
+ 12   -83.37071091561       -8.99       -5.78    4.5    70.9s
+ 13   -83.37071091566      -10.32       -6.18    7.5    75.7s
+ 14   -83.37071091567      -11.28       -6.64    5.0    65.7s
+ 15   -83.37071091567      -12.45       -7.25    5.3    67.7s
+ 16   -83.37071091567      -13.25       -7.45    7.1    81.3s
+ 17   -83.37071091567      -13.85       -7.79    2.3    45.6s
+ 18   -83.37071091567      -13.85       -8.24    5.6    64.6s
+ 19   -83.37071091567   +  -13.85       -8.45    4.7    72.0s
+ 20   -83.37071091567      -13.85       -9.12    2.7    50.6s
+ 21   -83.37071091567   +  -13.85       -9.19    7.0    85.0s
+ 22   -83.37071091567   +    -Inf      -10.23    2.6    52.7s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2240s /  99.8%            506GiB /  99.3%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1471s   65.8%   1471s    143GiB   28.4%   143GiB
+   LOBPCG                 176    1104s   49.4%   6.27s    108GiB   21.6%   630MiB
+     DftHamiltonian...  1.09k     659s   29.5%   603ms   19.1GiB    3.8%  17.9MiB
+       local+kinetic    40.5k     390s   17.5%  9.64ms   22.2MiB    0.0%     576B
+       nonlocal         1.09k     265s   11.9%   243ms   15.5GiB    3.1%  14.6MiB
+     ortho! X vs Y      1.66k     113s    5.1%  68.2ms   12.6GiB    2.5%  7.78MiB
+       ortho!           3.55k    23.3s    1.0%  6.56ms    543MiB    0.1%   157KiB
+     Update residuals   1.09k    64.8s    2.9%  59.3ms   14.2GiB    2.8%  13.3MiB
+     rayleigh_ritz        916    45.3s    2.0%  49.4ms    886MiB    0.2%  0.97MiB
+       ortho!             916    147ms    0.0%   160μs    116MiB    0.0%   130KiB
+     preconditioning    1.09k    3.94s    0.2%  3.60ms   18.4MiB    0.0%  17.3KiB
+     ortho!               176    3.80s    0.2%  21.6ms   61.5MiB    0.0%   358KiB
+   energy_hamiltonian      45     104s    4.7%   2.31s   20.1GiB    4.0%   457MiB
+     ene_ops               45    95.6s    4.3%   2.12s   15.6GiB    3.1%   354MiB
+       ene_ops: non...     45    62.9s    2.8%   1.40s    933MiB    0.2%  20.7MiB
+       ene_ops: xc         45    19.7s    0.9%   438ms   13.0GiB    2.6%   295MiB
+       ene_ops: kin...     45    7.77s    0.3%   173ms   5.25MiB    0.0%   119KiB
+       ene_ops: har...     45    938ms    0.0%  20.8ms   1.41GiB    0.3%  32.0MiB
+       ene_ops: local      45    101ms    0.0%  2.25ms    289MiB    0.1%  6.41MiB
+   compute_density         22    76.0s    3.4%   3.45s   0.96GiB    0.2%  44.9MiB
+     symmetrize_ρ          22    1.12s    0.1%  51.0ms    775MiB    0.2%  35.2MiB
+   χ0Mixing                22    34.0s    1.5%   1.55s   10.5GiB    2.1%   487MiB
+     compute_density       22    14.6s    0.7%   665ms   0.96GiB    0.2%  44.9MiB
+       symmetrize_ρ        22    2.09s    0.1%  95.2ms    775MiB    0.2%  35.2MiB
+     apply_kernel         193    11.9s    0.5%  61.8ms   6.64GiB    1.3%  35.2MiB
+   ortho_qr                 8    1.31s    0.1%   164ms    386MiB    0.1%  48.2MiB
+ compute_stresses_cart      1     666s   29.8%    666s    248GiB   49.4%   248GiB
+   compute_density          1     409s   18.3%    409s    135GiB   26.9%   135GiB
+     symmetrize_ρ           1    1.74s    0.1%   1.74s    737MiB    0.1%   737MiB
+   energy_hamiltonian       1     166s    7.4%    166s   7.25GiB    1.4%  7.25GiB
+     ene_ops                1     163s    7.3%    163s   6.25GiB    1.2%  6.25GiB
+       ene_ops: non...      1     146s    6.5%    146s    133MiB    0.0%   133MiB
+       ene_ops: xc          1    12.1s    0.5%   12.1s   5.37GiB    1.1%  5.37GiB
+       ene_ops: har...      1    1.81s    0.1%   1.81s    705MiB    0.1%   705MiB
+       ene_ops: kin...      1    637ms    0.0%   637ms    422KiB    0.0%   422KiB
+       ene_ops: local       1   31.3ms    0.0%  31.3ms   64.1MiB    0.0%  64.1MiB
+   Instantiation At...      1    36.1s    1.6%   36.1s   34.5GiB    6.9%  34.5GiB
+   Instantiation Xc         1    27.4s    1.2%   27.4s   32.8GiB    6.5%  32.8GiB
+     enforce_real!          1   4.24ms    0.0%  4.24ms   5.00KiB    0.0%  5.00KiB
+   Instantiation At...      1    25.0s    1.1%   25.0s   38.1GiB    7.6%  38.1GiB
+     enforce_real!          1   4.42ms    0.0%  4.42ms   5.00KiB    0.0%  5.00KiB
+   Instantiation Ewald      1    186ms    0.0%   186ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    186ms    0.0%   186ms   31.7KiB    0.0%  31.7KiB
+   build_kpoints            1    141ms    0.0%   141ms   98.3MiB    0.0%  98.3MiB
+   Instantiation Ha...      1   38.8ms    0.0%  38.8ms   96.1MiB    0.0%  96.1MiB
+     enforce_real!          1   4.36ms    0.0%  4.36ms   5.00KiB    0.0%  5.00KiB
+   Instantiation Ki...      1   30.0ms    0.0%  30.0ms    100MiB    0.0%   100MiB
+   Instantiation Ps...      1   47.3μs    0.0%  47.3μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   26.4μs    0.0%  26.4μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   16.9μs    0.0%  16.9μs     0.00B    0.0%    0.00B
+ compute_forces             1    72.0s    3.2%   72.0s   94.1GiB   18.7%  94.1GiB
+   forces: nonlocal         1    45.1s    2.0%   45.1s   72.1GiB   14.3%  72.1GiB
+   forces: local            1    16.0s    0.7%   16.0s   17.8GiB    3.6%  17.8GiB
+   forces: xc               1    10.9s    0.5%   10.9s   4.24GiB    0.8%  4.24GiB
+ PlaneWaveBasis             1    24.9s    1.1%   24.9s   17.2GiB    3.4%  17.2GiB
+   Instantiation At...      1    8.96s    0.4%   8.96s   9.42GiB    1.9%  9.42GiB
+     enforce_real!          1   4.37ms    0.0%  4.37ms   5.00KiB    0.0%  5.00KiB
+   Instantiation Xc         1    8.65s    0.4%   8.65s   3.63GiB    0.7%  3.63GiB
+     enforce_real!          1   4.32ms    0.0%  4.32ms   5.00KiB    0.0%  5.00KiB
+   Instantiation At...      1    5.39s    0.2%   5.39s   3.65GiB    0.7%  3.65GiB
+   build_kpoints            1    420ms    0.0%   420ms   98.2MiB    0.0%  98.2MiB
+   Instantiation Ewald      1   66.5ms    0.0%  66.5ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   66.5ms    0.0%  66.5ms   4.83KiB    0.0%  4.83KiB
+   Instantiation Ha...      1   8.84ms    0.0%  8.84ms   9.62MiB    0.0%  9.62MiB
+     enforce_real!          1   4.20ms    0.0%  4.20ms   5.00KiB    0.0%  5.00KiB
+   Instantiation Ki...      1   2.95ms    0.0%  2.95ms   10.0MiB    0.0%  10.0MiB
+   Instantiation Ps...      1   41.1μs    0.0%  41.1μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   16.3μs    0.0%  16.3μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   4.58μs    0.0%  4.58μs      672B    0.0%     672B
+ enforce_real!              1   4.33ms    0.0%  4.33ms   5.00KiB    0.0%  5.00KiB
+ symmetry_operations        1    565μs    0.0%   565μs    122KiB    0.0%   122KiB
+   _check_symmetries        1   15.8μs    0.0%  15.8μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 84 / 100 ================================
+#
+#
+# 85 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 8
+    num. julia threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (40, 108, 108), 466560 total points
+    kgrid                : MonkhorstPack([7, 3, 3])
+    num.   red. kpoints  : 63
+    num. irred. kpoints  : 63
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [7.72268   , -0.186117 , -0.262818 ]
+                               [0.105163  , 23.0737   , -0.181327 ]
+                               [0.124536  , -0.55162  , 23.0123   ]
+        unit cell volume     : 4101 Bohr³
+    
+        atoms                : Al₃₆
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 108
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -83.40949941300                   -0.69   15.2     129s
+  2   -83.41737563784       -2.10       -1.06    1.3    48.6s
+  3   -83.42048562276       -2.51       -2.40    7.8    85.1s
+  4   -83.42075013344       -3.58       -2.54    7.3    97.1s
+  5   -83.42082740251       -4.11       -3.17    2.1    54.0s
+  6   -83.42083278308       -5.27       -3.32    5.8    83.5s
+  7   -83.42083386784       -5.96       -3.45    1.9    49.0s
+  8   -83.42083557760       -5.77       -4.32    2.5    55.5s
+  9   -83.42083561023       -7.49       -4.31    9.2     104s
+ 10   -83.42083563673       -7.58       -4.72    1.7    50.2s
+ 11   -83.42083564289       -8.21       -5.27    3.8    72.1s
+ 12   -83.42083564311       -9.67       -5.34    5.7    76.5s
+ 13   -83.42083564336       -9.59       -5.71    1.8    50.3s
+ 14   -83.42083564343      -10.19       -6.16    3.7    70.5s
+ 15   -83.42083564343      -11.27       -6.33    4.8    62.6s
+ 16   -83.42083564343      -11.43       -6.98    3.0    59.6s
+ 17   -83.42083564343      -12.53       -7.72    6.8    87.1s
+ 18   -83.42083564343   +    -Inf       -8.08    8.0    90.2s
+ 19   -83.42083564343      -13.55       -7.85    4.5    78.6s
+ 20   -83.42083564343   +  -13.85       -8.40    2.3    55.5s
+ 21   -83.42083564343      -13.85       -9.07    3.7    67.6s
+ 22   -83.42083564343   +  -13.55       -9.07    6.5    82.7s
+ 23   -83.42083564343      -13.85       -9.36    1.4    47.0s
+ 24   -83.42083564343      -13.85       -9.44    3.6    71.0s
+ 25   -83.42083564343   +    -Inf       -9.96    1.8    51.7s
+ 26   -83.42083564343   +  -13.85      -10.25    4.1    77.5s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2725s /  99.8%            583GiB /  99.3%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1863s   68.5%   1863s    177GiB   30.6%   177GiB
+   LOBPCG                 208    1376s   50.6%   6.62s    132GiB   22.7%   648MiB
+     DftHamiltonian...  1.14k     823s   30.3%   724ms   23.0GiB    4.0%  20.7MiB
+       local+kinetic    45.1k     508s   18.7%  11.3ms   24.8MiB    0.0%     576B
+       nonlocal         1.14k     310s   11.4%   273ms   19.0GiB    3.3%  17.1MiB
+     ortho! X vs Y      1.65k     129s    4.7%  77.9ms   13.8GiB    2.4%  8.57MiB
+       ortho!           3.55k    28.4s    1.0%  8.00ms    594MiB    0.1%   171KiB
+     Update residuals   1.14k    95.7s    3.5%  84.2ms   17.5GiB    3.0%  15.7MiB
+     rayleigh_ritz        929    56.2s    2.1%  60.5ms   0.95GiB    0.2%  1.04MiB
+       ortho!             929    164ms    0.0%   176μs    131MiB    0.0%   144KiB
+     ortho!               208    5.03s    0.2%  24.2ms   74.7MiB    0.0%   368KiB
+     preconditioning    1.14k    4.97s    0.2%  4.37ms   20.5MiB    0.0%  18.5KiB
+   energy_hamiltonian      53     136s    5.0%   2.57s   26.2GiB    4.5%   506MiB
+     ene_ops               53     134s    4.9%   2.53s   20.3GiB    3.5%   392MiB
+       ene_ops: non...     53    82.2s    3.0%   1.55s   1.09GiB    0.2%  21.1MiB
+       ene_ops: xc         53    34.8s    1.3%   657ms   17.0GiB    2.9%   328MiB
+       ene_ops: kin...     53    10.6s    0.4%   199ms   6.28MiB    0.0%   121KiB
+       ene_ops: har...     53    1.17s    0.0%  22.1ms   1.84GiB    0.3%  35.6MiB
+       ene_ops: local      53    132ms    0.0%  2.48ms    378MiB    0.1%  7.13MiB
+   compute_density         26     106s    3.9%   4.08s   1.27GiB    0.2%  49.9MiB
+     symmetrize_ρ          26    909ms    0.0%  35.0ms   0.99GiB    0.2%  39.2MiB
+   χ0Mixing                26    46.2s    1.7%   1.78s   13.7GiB    2.4%   541MiB
+     compute_density       26    24.8s    0.9%   955ms   1.27GiB    0.2%  49.8MiB
+       symmetrize_ρ        26    8.31s    0.3%   320ms   0.99GiB    0.2%  39.2MiB
+     apply_kernel         228    4.35s    0.2%  19.1ms   8.72GiB    1.5%  39.2MiB
+   ortho_qr                16    3.41s    0.1%   213ms    858MiB    0.1%  53.6MiB
+ compute_stresses_cart      1     725s   26.7%    725s    278GiB   47.9%   278GiB
+   compute_density          1     440s   16.2%    440s    152GiB   26.3%   152GiB
+     symmetrize_ρ           1    1.56s    0.1%   1.56s    819MiB    0.1%   819MiB
+   energy_hamiltonian       1     185s    6.8%    185s   8.04GiB    1.4%  8.04GiB
+     ene_ops                1     182s    6.7%    182s   6.93GiB    1.2%  6.93GiB
+       ene_ops: non...      1     165s    6.1%    165s    135MiB    0.0%   135MiB
+       ene_ops: xc          1    12.6s    0.5%   12.6s   5.97GiB    1.0%  5.97GiB
+       ene_ops: har...      1    1.91s    0.1%   1.91s    783MiB    0.1%   783MiB
+       ene_ops: kin...      1    930ms    0.0%   930ms    428KiB    0.0%   428KiB
+       ene_ops: local       1   32.6ms    0.0%  32.6ms   71.2MiB    0.0%  71.2MiB
+   Instantiation At...      1    38.9s    1.4%   38.9s   38.1GiB    6.6%  38.1GiB
+   Instantiation Xc         1    30.7s    1.1%   30.7s   36.3GiB    6.3%  36.3GiB
+     enforce_real!          1   6.30ms    0.0%  6.30ms   5.06KiB    0.0%  5.06KiB
+   Instantiation At...      1    28.2s    1.0%   28.2s   42.2GiB    7.3%  42.2GiB
+     enforce_real!          1   4.71ms    0.0%  4.71ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Ewald      1    187ms    0.0%   187ms   40.7KiB    0.0%  40.7KiB
+     precomp: Ewald         1    187ms    0.0%   187ms   31.7KiB    0.0%  31.7KiB
+   build_kpoints            1   92.9ms    0.0%  92.9ms    108MiB    0.0%   108MiB
+   Instantiation Ha...      1   41.0ms    0.0%  41.0ms    107MiB    0.0%   107MiB
+     enforce_real!          1   7.23ms    0.0%  7.23ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Ki...      1   26.6ms    0.0%  26.6ms    111MiB    0.0%   111MiB
+   Instantiation Ps...      1   63.0μs    0.0%  63.0μs   20.9KiB    0.0%  20.9KiB
+   Instantiation En...      1   27.7μs    0.0%  27.7μs   3.81KiB    0.0%  3.81KiB
+   _check_kpoint_re...      1   17.3μs    0.0%  17.3μs     0.00B    0.0%    0.00B
+ compute_forces             1     101s    3.7%    101s    105GiB   18.2%   105GiB
+   forces: nonlocal         1    67.0s    2.5%   67.0s   80.6GiB   13.9%  80.6GiB
+   forces: local            1    18.5s    0.7%   18.5s   19.8GiB    3.4%  19.8GiB
+   forces: xc               1    16.0s    0.6%   16.0s   4.70GiB    0.8%  4.70GiB
+ PlaneWaveBasis             1    28.4s    1.0%   28.4s   19.1GiB    3.3%  19.1GiB
+   Instantiation At...      1    10.4s    0.4%   10.4s   10.4GiB    1.8%  10.4GiB
+     enforce_real!          1   6.04ms    0.0%  6.04ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Xc         1    10.1s    0.4%   10.1s   4.02GiB    0.7%  4.02GiB
+     enforce_real!          1   5.62ms    0.0%  5.62ms   5.06KiB    0.0%  5.06KiB
+   Instantiation At...      1    6.23s    0.2%   6.23s   4.03GiB    0.7%  4.03GiB
+   build_kpoints            1    496ms    0.0%   496ms    108MiB    0.0%   108MiB
+   Instantiation Ewald      1   66.5ms    0.0%  66.5ms   6.98KiB    0.0%  6.98KiB
+     precomp: Ewald         1   66.5ms    0.0%  66.5ms   4.83KiB    0.0%  4.83KiB
+   Instantiation Ha...      1   12.4ms    0.0%  12.4ms   10.7MiB    0.0%  10.7MiB
+     enforce_real!          1   6.72ms    0.0%  6.72ms   5.06KiB    0.0%  5.06KiB
+   Instantiation Ki...      1   3.59ms    0.0%  3.59ms   11.1MiB    0.0%  11.1MiB
+   Instantiation Ps...      1   54.9μs    0.0%  54.9μs   16.0KiB    0.0%  16.0KiB
+   _check_kpoint_re...      1   16.2μs    0.0%  16.2μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   3.87μs    0.0%  3.87μs      672B    0.0%     672B
+ enforce_real!              1   4.75ms    0.0%  4.75ms   5.06KiB    0.0%  5.06KiB
+ symmetry_operations        1    621μs    0.0%   621μs    122KiB    0.0%   122KiB
+   _check_symmetries        1   20.1μs    0.0%  20.1μs   1.81KiB    0.0%  1.81KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 90 / 100 ================================
+#
+#
+# 92 / 100 ================================
+#
+#
+# 93 / 100 ================================
+#
+#
+# 94 / 100 ================================
+#
+#
+# 95 / 100 ================================
+#
+#
+# 99 / 100 ================================
+#
