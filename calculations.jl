@@ -21,7 +21,7 @@ function run_calculation(system)
     scfres   = self_consistent_field(basis; tol=1e-10)
     forces   = compute_forces_cart(scfres)
 
-    if length(system) > 50  # Performance issue in DFTK
+    if length(system) > 45  # Performance issue in DFTK
         stresses = "nothing"
     else
         stresses = compute_stresses_cart(scfres)
