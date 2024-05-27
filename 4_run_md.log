@@ -1,0 +1,58 @@
+┌ Warning: 
+│ 
+│ 
+│ Interface changes in v0.8.30, for `PeriodicSystems` submodule of CellListMap.
+│ 
+│ From v0.8.30 on, the `PeriodicSystems` submodule is deprecated and will be removed in future versions.
+│ (code that works in v0.8.XX series will work in v0.8.3X through compatibility functions).
+│ 
+│ The same functionality can be achieved by using directly the `CellListMap` module and the 
+│ `ParticleSystem` data structure. 
+│ 
+│ To migrate to the new interface, replace the code:
+│ 
+│ using CellListMap.PeriodicSystems  => using CellListMap
+│ system = PeriodicSystem(...)       => system = ParticleSystem(...)
+│ 
+│ The new `ParticleSystem` interface supports non-periodic systems, by
+│ not setting the `unitcell` field in the system (or set `unitcell = nothing`).
+│ 
+│ Suppress this warning by setting: ENV["CELLLISTMAP_8.3_WARNING"] = "false"
+│ 
+└ @ CellListMap.PeriodicSystems
+┌ Warning: 
+│ 
+│ 
+│ Interface changes in v0.8.30, for `PeriodicSystems` submodule of CellListMap.
+│ 
+│ From v0.8.30 on, the `PeriodicSystems` submodule is deprecated and will be removed in future versions.
+│ (code that works in v0.8.XX series will work in v0.8.3X through compatibility functions).
+│ 
+│ The same functionality can be achieved by using directly the `CellListMap` module and the 
+│ `ParticleSystem` data structure. 
+│ 
+│ To migrate to the new interface, replace the code:
+│ 
+│ using CellListMap.PeriodicSystems  => using CellListMap
+│ system = PeriodicSystem(...)       => system = ParticleSystem(...)
+│ 
+│ The new `ParticleSystem` interface supports non-periodic systems, by
+│ not setting the `unitcell` field in the system (or set `unitcell = nothing`).
+│ 
+│ Suppress this warning by setting: ENV["CELLLISTMAP_8.3_WARNING"] = "false"
+│ 
+└ @ CellListMap.PeriodicSystems
+
+This potential was saved with following versions:
+
+JuLIP v0.14.7
+ACEbase v0.4.3
+ACE1x v0.1.10
+ACE1 v0.12.2
+ACEmd v0.1.12
+ACEpotentials v0.6.6
+ACEfit v0.1.5
+
+If you have problems with using this potential, pin your installation to above versions.
+
+sys.loggers.temp.history = Quantity{Float64, 𝚯, Unitful.FreeUnits{(K,), 𝚯, nothing}}[410.0403264605755 K, 6598.925358468044 K, 10962.354313302081 K, 9915.416003886367 K, 18160.07750285073 K, 42114.89344066145 K, 61553.24447925732 K, 64557.22038823759 K, 51869.16168554633 K, 59334.63218022082 K, 65850.59155185842 K]

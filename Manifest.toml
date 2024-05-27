@@ -722,7 +722,7 @@ version = "0.1.10"
 
 [[deps.ExtXYZ]]
 deps = ["AtomsBase", "PeriodicTable", "StaticArrays", "Unitful", "UnitfulAtomic", "extxyz_jll"]
-git-tree-sha1 = "dcc6a020fb1109291219fbf3161a657af0032314"
+git-tree-sha1 = "35758147c0d25b557510d8cc54bb2ced5e271e98"
 repo-rev = "fix_typecheck"
 repo-url = "https://github.com/mfherbst/ExtXYZ.jl"
 uuid = "352459e4-ddd7-4360-8937-99dcb397b478"
