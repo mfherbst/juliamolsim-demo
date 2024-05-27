@@ -19,35 +19,14 @@ systems = map(dftk_results) do dftk
     system = load_system(structure * ".extxyz", parse(Int, index))
     data = open(JSON3.read, joinpath("dftk_output", dftk))
 
-    # TODO Use the right units here
-    energy = data[:energies][:total]     # in Hartree
-    forces = reduce(hcat, data[:forces]) # in Hartree / Bohr, 3xn_atom array
-    properties = (; energy=ustrip(auconvert(u"eV", energy)),
-                    forces=ustrip.(auconvert.(u"eV/Å", forces)))
+    energy = data[:energies][:total]     * u"hartree"
+    force  = reduce(hcat, data[:forces]) * u"hartree/bohr"  # 3 x n_atom array
+    properties = (; energy=ustrip(u"eV",   energy),
+                    force=ustrip.(u"eV/Å", force))
     if data[:stresses] != "nothing"
         virial = Array(reshape(data[:stresses], 3, 3))
-        properties = merge(properties,
-                           (; virial=ustrip.(auconvert.(u"eV", virial))))
+        properties = merge(properties, (; virial=ustrip.(u"eV", virial * u"eV")))
     end
-
-    # Work around a bug in ExtXYZ where just using FlexibleSystem does not work
-    #
-    # elseif v isa AbstractArray{<:ExtxyzType} should be added as an option
-    # to the type check in write_dict
-    #
-    # return FlexibleSystem(system; properties...)
-
-    sys_with_props = FlexibleSystem(system; properties...)
-
-    extxyz = with_logger(NullLogger()) do
-        ExtXYZ.write_dict(sys_with_props)
-    end
-
-    extxyz["info"]["forces"] = properties.forces
-    if haskey(properties, :virial)
-        extxyz["info"]["virial"] = properties.virial
-    end
-    extxyz
+    return FlexibleSystem(system; properties...)
 end
-ExtXYZ.write_frames("Al_DFTK_dataset.extxyz", systems)
-# save_trajectory("Al_DFTK_dataset.extxyz", systems)
+save_trajectory("Al_DFTK_dataset.extxyz", systems)
