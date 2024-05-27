@@ -1,3 +1,10 @@
+#!/bin/bash
+#=
+BN=$(basename "$0" .jl)
+julia --project -t1 $BN.jl |& tee $BN.log
+exit $?
+=#
+
 using ACEpotentials
 using AtomsBase
 using AtomsBuilder
