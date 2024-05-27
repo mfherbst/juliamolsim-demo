@@ -82,3 +82,20 @@ let file = "Al_defect_1.extxyz", n_structures = 100
         save_trajectory(file, systems)
     end
 end
+
+# Category 4 structures: Defect test systems:
+let file = "Al_test_1.extxyz", n_structures = 2
+    if !isfile(file)
+        systems = map(1:n_structures) do i
+            nx = rand(1:max_supercell)
+            ny = rand(1:max_supercell)
+            nz = rand(1:max_supercell)
+            system = bulk(:Al, cubic=true) * (nx, ny, nz)
+
+            idx = rand(1:length(system))
+            system = drop_atom(system, idx)
+            rattle!(system, maxrattle_pos * rand())  # Rattle positions (inplace)
+        end
+        save_trajectory(file, systems)
+    end
+end
