@@ -8,7 +8,7 @@ using AtomsBuilder
 using AtomsIO
 using AtomsBase
 using LinearAlgebra
-
+using Unitful
 
 function rattle_cell(system, r_cell; update_position=true)
     F = I + r_cell * (rand(3, 3) .- 0.5)
@@ -28,13 +28,9 @@ function rattle_system(system, r_pos, r_cell)
     rattle!(system, r_pos)  # Rattle positions (inplace)
     system
 end
-function drop_atom(system, idx::Integer)
-    atoms = [at for (i, at) in enumerate(system) if i != idx]
-    FlexibleSystem(system; atoms)
-end
 
 # Some parameters
-maxrattle_pos  = 0.1
+maxrattle_pos  = 0.1u"Å"
 maxrattle_cell = 0.1
 max_supercell  = 3
 
@@ -46,9 +42,24 @@ let file = "Al_supercells_1.extxyz", n_structures = 100
             ny = rand(1:max_supercell)
             nz = rand(1:max_supercell)
             system = bulk(:Al, cubic=true) * (nx, ny, nz)
-            rattle_system(system,
-                          maxrattle_pos  * rand(),
-                          maxrattle_cell * rand())
+            system = rattle_system(system,
+                                   maxrattle_pos  * rand(),
+                                   maxrattle_cell * rand())
+            FlexibleSystem(system; repeat=[nx, ny, nz])
+        end
+        save_trajectory(file, systems)
+    end
+end
+
+let file = "Al_supercells_2.extxyz", n_structures = 100
+    if !isfile(file)
+        systems = map(1:n_structures) do i
+            nx = ny = nz = 2
+            system = bulk(:Al, cubic=true) * (nx, ny, nz)
+            system = rattle_system(system,
+                                   maxrattle_pos  * rand(),
+                                   maxrattle_cell * rand())
+            FlexibleSystem(system; repeat=[nx, ny, nz])
         end
         save_trajectory(file, systems)
     end
@@ -58,7 +69,8 @@ end
 let file = "Al_bulk_1.extxyz", n_structures = 100
     if !isfile(file)
         systems = map(1:n_structures) do i
-            rattle_cell(bulk(:Al), maxrattle_cell * rand(); update_position=false)
+            system = rattle_cell(bulk(:Al), maxrattle_cell * rand(); update_position=false)
+            FlexibleSystem(system; repeat=[1, 1, 1])
         end
         save_trajectory(file, systems)
     end
@@ -74,10 +86,11 @@ let file = "Al_defect_1.extxyz", n_structures = 100
             system = bulk(:Al, cubic=true) * (nx, ny, nz)
 
             idx = rand(1:length(system))
-            system = drop_atom(system, idx)
-            rattle_system(system,
-                          maxrattle_pos  * rand(),
-                          maxrattle_cell * rand())
+            system = deleteat!(system, idx)
+            system = rattle_system(system,
+                                   maxrattle_pos  * rand(),
+                                   maxrattle_cell * rand())
+            FlexibleSystem(system; repeat=[nx, ny, nz])
         end
         save_trajectory(file, systems)
     end
@@ -93,9 +106,11 @@ let file = "Al_test_1.extxyz", n_structures = 2
             system = bulk(:Al, cubic=true) * (nx, ny, nz)
 
             idx = rand(1:length(system))
-            system = drop_atom(system, idx)
-            rattle!(system, maxrattle_pos * rand())  # Rattle positions (inplace)
+            system = deleteat!(system, idx)
+            system = rattle!(system, maxrattle_pos * rand())  # Rattle positions (inplace)
+            FlexibleSystem(system; repeat=[nx, ny, nz])
         end
         save_trajectory(file, systems)
     end
 end
+
