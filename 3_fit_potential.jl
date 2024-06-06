@@ -20,7 +20,12 @@ data_test  = all_data[perm[floor(Int, 0.8length(all_data))+1:end]]
 @show length(data_train)
 
 # Set up ACEmodel for fitting
-model = acemodel(elements = [:Al,], order = 3, totaldegree = [ 20, 16, 12 ],)
+model = acemodel(
+    elements=[:Al, ],
+    order=3,
+    totaldegree=[20, 16, 12],
+    Eref = [:Al => -2.180568046, ],
+)
 @show length(model.basis);
 
 # Fit the model
