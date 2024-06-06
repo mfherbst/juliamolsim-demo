@@ -25,7 +25,12 @@ function run_calculation(system)
     scfres   = self_consistent_field(basis; tol=1e-10)
     forces   = compute_forces_cart(scfres)
 
-    stresses = compute_stresses_cart(scfres)
+    # Skip stress for the most expensive cases
+    if length(system) > 45
+        stresses = "nothing"
+    else
+        stresses = compute_stresses_cart(scfres)
+    end
     if mpi_master()
         println(DFTK.timer)
     end
