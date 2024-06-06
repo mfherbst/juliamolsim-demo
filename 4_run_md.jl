@@ -13,7 +13,7 @@ using AtomsIO
 
 # Load potential and system
 potential = load_potential("Al_DFTK_dataset_potential.json"; new_format=true)
-structure = load_system("Al_test_1.extxyz", 1)
+structure = load_system("Al_test_1.extxyz", 2)  # 1 has a defect, 2 not
 
 ## Molly simulation
 # Pack data to Molly compatible format, note this is a custom 

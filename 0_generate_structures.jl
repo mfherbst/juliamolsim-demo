@@ -105,8 +105,9 @@ let file = "Al_test_1.extxyz", n_structures = 2
             nz = rand(1:max_supercell)
             system = bulk(:Al, cubic=true) * (nx, ny, nz)
 
-            idx = rand(1:length(system))
-            system = deleteat!(system, idx)
+            if i == 1
+                system = deleteat!(system, ceil(Int, length(system)/2))
+            end
             system = rattle!(system, maxrattle_pos * rand())  # Rattle positions (inplace)
             FlexibleSystem(system; repeat=[nx, ny, nz])
         end
