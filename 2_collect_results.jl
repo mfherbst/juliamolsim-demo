@@ -30,4 +30,5 @@ systems = map(dftk_results) do dftk
     end
     return FlexibleSystem(system; atoms, properties...)
 end
+println("Extracted $(length(systems)) systems for building the potential.")
 save_trajectory("Al_DFTK_dataset.extxyz", systems)

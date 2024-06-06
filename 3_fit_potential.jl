@@ -12,6 +12,7 @@ using Unitful
 
 # Load data and split into training and testing
 all_data = ExtXYZ.Atoms.(ExtXYZ.read_frames("Al_DFTK_dataset.extxyz"))
+println("Read $(length(all_data)) systems for building the potential.")
 perm = randperm(length(all_data))
 data_train = all_data[perm[1:floor(Int, 0.8length(all_data))]]
 data_test  = all_data[perm[floor(Int, 0.8length(all_data))+1:end]]
