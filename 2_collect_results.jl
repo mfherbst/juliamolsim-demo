@@ -13,6 +13,7 @@ using UnitfulAtomic
 using Logging
 
 dftk_results = filter!(endswith(".json"), readdir("dftk_output"))
+println("Found $(length(dftk_results)) result files.")
 systems = map(dftk_results) do dftk
     prefix, _ = splitext(dftk)
     structure, index = split(prefix, "-")
