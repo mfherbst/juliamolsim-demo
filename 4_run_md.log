@@ -20,28 +20,6 @@
 │ Suppress this warning by setting: ENV["CELLLISTMAP_8.3_WARNING"] = "false"
 │ 
 └ @ CellListMap.PeriodicSystems
-┌ Warning: 
-│ 
-│ 
-│ Interface changes in v0.8.30, for `PeriodicSystems` submodule of CellListMap.
-│ 
-│ From v0.8.30 on, the `PeriodicSystems` submodule is deprecated and will be removed in future versions.
-│ (code that works in v0.8.XX series will work in v0.8.3X through compatibility functions).
-│ 
-│ The same functionality can be achieved by using directly the `CellListMap` module and the 
-│ `ParticleSystem` data structure. 
-│ 
-│ To migrate to the new interface, replace the code:
-│ 
-│ using CellListMap.PeriodicSystems  => using CellListMap
-│ system = PeriodicSystem(...)       => system = ParticleSystem(...)
-│ 
-│ The new `ParticleSystem` interface supports non-periodic systems, by
-│ not setting the `unitcell` field in the system (or set `unitcell = nothing`).
-│ 
-│ Suppress this warning by setting: ENV["CELLLISTMAP_8.3_WARNING"] = "false"
-│ 
-└ @ CellListMap.PeriodicSystems
 
 This potential was saved with following versions:
 
@@ -55,4 +33,7 @@ ACEfit v0.1.5
 
 If you have problems with using this potential, pin your installation to above versions.
 
-sys.loggers.temp.history = Quantity{Float64, 𝚯, Unitful.FreeUnits{(K,), 𝚯, nothing}}[410.0403264605755 K, 6598.925358468044 K, 10962.354313302081 K, 9915.416003886367 K, 18160.07750285073 K, 42114.89344066145 K, 61553.24447925732 K, 64557.22038823759 K, 51869.16168554633 K, 59334.63218022082 K, 65850.59155185842 K]
+No defect
+Performing 1000 MD steps
+sys.loggers.temp.history = Quantity{Float64, 𝚯, Unitful.FreeUnits{(K,), 𝚯, nothing}}[323.0209612353907 K, 196.42273589563536 K, 234.58805974124414 K, 240.06167783372484 K, 227.88439611333442 K, 221.2866985598478 K, 236.37039857668825 K, 215.7404052672794 K, 225.77100276556897 K, 245.76735569007 K, 228.43702196321516 K]
+Visualising results

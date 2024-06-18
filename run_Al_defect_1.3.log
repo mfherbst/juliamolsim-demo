@@ -1,0 +1,1261 @@
+┌ Info: Threading setup: 
+│   Threads.nthreads() = 1
+│   n_DFTK = 1
+│   n_fft = 1
+└   n_blas = 1
+#
+# 45 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 6
+    num. julia threads   : 1
+    num. DFTK  threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (120, 108, 40), 518400 total points
+    kgrid                : MonkhorstPack([4, 4, 12])
+    num.   red. kpoints  : 192
+    num. irred. kpoints  : 192
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [23.5369   , -0.446604 , -0.215884 ]
+                               [0.127256  , 22.7223   , -0.139305 ]
+                               [-0.359292 , -0.571696 , 7.84617   ]
+        unit cell volume     : 4193 Bohr³
+    
+        atoms                : Al₃₅
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 105
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    32-element Vector{Int64}:
+│     17
+│      7
+│     26
+│     15
+│      ⋮
+│     11
+│     21
+│      8
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    32-element Vector{Int64}:
+│     19
+│     11
+│     18
+│     10
+│      ⋮
+│     17
+│     18
+│     13
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -80.98705494953                   -0.69   13.7     224s
+  2   -81.04527034305       -1.23       -1.06    1.2    89.2s
+  3   -81.05824605354       -1.89       -1.89    7.2     168s
+  4   -81.06179849809       -2.45       -2.09    3.8     114s
+  5   -81.06421258218       -2.62       -2.84    3.6     117s
+  6   -81.06423557730       -4.64       -2.88    8.0     188s
+  7   -81.06427825082       -4.37       -3.12    1.9    88.3s
+  8   -81.06429542381       -4.77       -3.46    3.5     126s
+  9   -81.06429687648       -5.84       -3.51    3.5     120s
+ 10   -81.06429965921       -5.56       -3.82    2.0    91.7s
+ 11   -81.06430057658       -6.04       -4.40    3.7     128s
+ 12   -81.06430060453       -7.55       -4.49    6.4     149s
+ 13   -81.06430064133       -7.43       -5.11    2.3    98.2s
+ 14   -81.06430064121   +   -9.92       -5.03    6.6     177s
+ 15   -81.06430064356       -8.63       -5.35    2.0    92.4s
+ 16   -81.06430064388       -9.49       -5.48    3.6     135s
+ 17   -81.06430064416       -9.56       -5.71    1.8    87.0s
+ 18   -81.06430064431       -9.81       -6.95    3.0     120s
+ 19   -81.06430064430   +  -10.97       -6.24    9.7     245s
+ 20   -81.06430064431      -11.19       -6.39    3.1     122s
+ 21   -81.06430064431      -11.19       -7.87    5.3     152s
+ 22   -81.06430064431      -13.85       -8.03    8.8     210s
+ 23   -81.06430064431   +    -Inf       -7.89    4.1     138s
+ 24   -81.06430064431   +    -Inf       -8.39    3.2     123s
+ 25   -81.06430064431      -13.85       -8.38    2.9     109s
+ 26   -81.06430064431   +  -13.37       -8.97    2.0    93.7s
+ 27   -81.06430064431      -13.37       -9.58    4.9     155s
+ 28   -81.06430064431   +  -13.85       -9.85    6.9     155s
+ 29   -81.06430064431      -13.85      -10.60    3.1     113s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            1.35h /  99.8%           1.07TiB /  99.9%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1.09h   81.2%   1.09h    677GiB   61.8%   677GiB
+   LOBPCG                 928    3414s   70.3%   3.68s    615GiB   56.2%   678MiB
+     DftHamiltonian...  5.65k    2163s   44.6%   383ms    110GiB   10.0%  19.9MiB
+       local+kinetic     204k    1125s   23.2%  5.51ms    112MiB    0.0%     576B
+       nonlocal         5.65k    1002s   20.6%   177ms   87.3GiB    8.0%  15.8MiB
+     ortho! X vs Y      8.51k     362s    7.5%  42.5ms   69.8GiB    6.4%  8.39MiB
+       ortho!           18.3k     105s    2.2%  5.78ms   2.60GiB    0.2%   150KiB
+     rayleigh_ritz      4.72k     189s    3.9%  39.9ms   4.19GiB    0.4%   931KiB
+       ortho!           4.72k    1.19s    0.0%   252μs    566MiB    0.1%   123KiB
+     Update residuals   5.65k    76.3s    1.6%  13.5ms   80.6GiB    7.4%  14.6MiB
+     ortho!               928    17.7s    0.4%  19.1ms    306MiB    0.0%   337KiB
+     preconditioning    5.65k    13.8s    0.3%  2.44ms    227MiB    0.0%  41.2KiB
+   compute_density         29     159s    3.3%   5.48s   1.57GiB    0.1%  55.5MiB
+     symmetrize_ρ          29    1.07s    0.0%  37.0ms   1.23GiB    0.1%  43.5MiB
+   energy_hamiltonian      30     158s    3.3%   5.26s   22.1GiB    2.0%   755MiB
+     ene_ops               30     156s    3.2%   5.19s   14.5GiB    1.3%   493MiB
+       ene_ops: non...     30     137s    2.8%   4.55s   2.27GiB    0.2%  77.4MiB
+       ene_ops: xc         30    16.0s    0.3%   535ms   10.8GiB    1.0%   367MiB
+       ene_ops: kin...     30    2.12s    0.0%  70.5ms   13.4MiB    0.0%   457KiB
+       ene_ops: har...     30    309ms    0.0%  10.3ms   1.16GiB    0.1%  39.6MiB
+       ene_ops: local      30   35.2ms    0.0%  1.17ms    238MiB    0.0%  7.93MiB
+   energy                  29     155s    3.2%   5.36s   13.9GiB    1.3%   492MiB
+     ene_ops: nonlocal     29     138s    2.8%   4.77s   2.27GiB    0.2%  80.0MiB
+     ene_ops: xc           29    9.66s    0.2%   333ms   10.3GiB    0.9%   364MiB
+     ene_ops: kinetic      29    4.13s    0.1%   142ms   13.4MiB    0.0%   471KiB
+     ene_ops: hartree      29    951ms    0.0%  32.8ms   1.12GiB    0.1%  39.6MiB
+     ene_ops: local        29    197ms    0.0%  6.79ms    230MiB    0.0%  7.93MiB
+   χ0Mixing                29    38.7s    0.8%   1.33s   15.8GiB    1.4%   558MiB
+     compute_density       29    29.3s    0.6%   1.01s   1.57GiB    0.1%  55.4MiB
+       symmetrize_ρ        29    283ms    0.0%  9.77ms   1.23GiB    0.1%  43.5MiB
+     apply_kernel         230    7.59s    0.2%  33.0ms   9.77GiB    0.9%  43.5MiB
+   ortho_qr                32    3.18s    0.1%  99.2ms   1.65GiB    0.2%  52.7MiB
+ compute_stresses_cart      1     722s   14.9%    722s    103GiB    9.4%   103GiB
+   energy                   1     600s   12.4%    600s   6.88GiB    0.6%  6.88GiB
+     ene_ops: nonlocal      1     578s   11.9%    578s    548MiB    0.0%   548MiB
+     ene_ops: xc            1    13.2s    0.3%   13.2s   5.34GiB    0.5%  5.34GiB
+     ene_ops: hartree       1    1.07s    0.0%   1.07s    619MiB    0.1%   619MiB
+     ene_ops: kinetic       1    969ms    0.0%   969ms   15.7MiB    0.0%  15.7MiB
+     ene_ops: local         1   23.3ms    0.0%  23.3ms   55.5MiB    0.0%  55.5MiB
+   Instantiation At...      1    57.1s    1.2%   57.1s   70.5GiB    6.4%  70.5GiB
+   Instantiation At...      1    20.5s    0.4%   20.5s   1.18GiB    0.1%  1.18GiB
+     enforce_real!          1   4.98ms    0.0%  4.98ms   5.23KiB    0.0%  5.23KiB
+   compute_density          1    18.6s    0.4%   18.6s   16.9GiB    1.5%  16.9GiB
+     symmetrize_ρ           1    1.60s    0.0%   1.60s    666MiB    0.1%   666MiB
+   Instantiation Xc         1    17.3s    0.4%   17.3s   5.97GiB    0.5%  5.97GiB
+     enforce_real!          1   4.98ms    0.0%  4.98ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Ewald      1    1.38s    0.0%   1.38s    125MiB    0.0%   125MiB
+     precomp: Ewald         1    872ms    0.0%   872ms   37.1MiB    0.0%  37.1MiB
+   Instantiation Ha...      1    1.05s    0.0%   1.05s    150MiB    0.0%   150MiB
+     enforce_real!          1   5.39ms    0.0%  5.39ms   5.23KiB    0.0%  5.23KiB
+   build_kpoints            1    698ms    0.0%   698ms    477MiB    0.0%   477MiB
+   Instantiation Ki...      1    591ms    0.0%   591ms    336MiB    0.0%   336MiB
+   Instantiation Ps...      1   49.9ms    0.0%  49.9ms   7.56MiB    0.0%  7.56MiB
+   Instantiation En...      1   79.8μs    0.0%  79.8μs   27.6KiB    0.0%  27.6KiB
+   _check_kpoint_re...      1   44.7μs    0.0%  44.7μs     0.00B    0.0%    0.00B
+ compute_forces             1     158s    3.3%    158s    303GiB   27.7%   303GiB
+   forces: nonlocal         1     131s    2.7%    131s    301GiB   27.5%   301GiB
+   forces: local            1    17.5s    0.4%   17.5s   70.9MiB    0.0%  70.9MiB
+   forces: xc               1    7.39s    0.2%   7.39s   1.42GiB    0.1%  1.42GiB
+ PlaneWaveBasis             1    32.9s    0.7%   32.9s   11.5GiB    1.0%  11.5GiB
+   Instantiation At...      1    15.2s    0.3%   15.2s   9.57GiB    0.9%  9.57GiB
+   Instantiation At...      1    9.65s    0.2%   9.65s    167MiB    0.0%   167MiB
+     enforce_real!          1   4.97ms    0.0%  4.97ms   5.23KiB    0.0%  5.23KiB
+   Instantiation Xc         1    5.88s    0.1%   5.88s    707MiB    0.1%   707MiB
+     enforce_real!          1   5.07ms    0.0%  5.07ms   5.23KiB    0.0%  5.23KiB
+   build_kpoints            1    453ms    0.0%   453ms    477MiB    0.0%   477MiB
+   Instantiation Ewald      1   59.5ms    0.0%  59.5ms   8.12KiB    0.0%  8.12KiB
+     precomp: Ewald         1   59.4ms    0.0%  59.4ms   5.31KiB    0.0%  5.31KiB
+   Instantiation Ps...      1   48.4ms    0.0%  48.4ms   4.50MiB    0.0%  4.50MiB
+   Instantiation Ki...      1   17.4ms    0.0%  17.4ms   45.3MiB    0.0%  45.3MiB
+   Instantiation Ha...      1   9.45ms    0.0%  9.45ms   11.9MiB    0.0%  11.9MiB
+     enforce_real!          1   4.93ms    0.0%  4.93ms   5.23KiB    0.0%  5.23KiB
+   _check_kpoint_re...      1   44.8μs    0.0%  44.8μs     0.00B    0.0%    0.00B
+   Instantiation En...      1   5.36μs    0.0%  5.36μs      864B    0.0%     864B
+ symmetry_operations        1   18.2ms    0.0%  18.2ms   4.60MiB    0.0%  4.60MiB
+   _check_symmetries        1   48.4μs    0.0%  48.4μs   1.70KiB    0.0%  1.70KiB
+ enforce_real!              1   5.11ms    0.0%  5.11ms   5.23KiB    0.0%  5.23KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 46 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 6
+    num. julia threads   : 1
+    num. DFTK  threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (108, 72, 75), 583200 total points
+    kgrid                : MonkhorstPack([4, 7, 7])
+    num.   red. kpoints  : 196
+    num. irred. kpoints  : 196
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [22.6474   , 0.215925  , 0.104064  ]
+                               [0.317409  , 15.1722   , 0.0972225 ]
+                               [-0.0505497, 0.2478    , 15.4791   ]
+        unit cell volume     : 5317.3 Bohr³
+    
+        atoms                : Al₄₇
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 141
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    32-element Vector{Int64}:
+│     19
+│     14
+│     16
+│     13
+│      ⋮
+│     14
+│     14
+│      4
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    32-element Vector{Int64}:
+│     21
+│     10
+│     21
+│     19
+│      ⋮
+│      5
+│     16
+│     17
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    33-element Vector{Int64}:
+│     16
+│     12
+│     13
+│     16
+│      ⋮
+│     15
+│      5
+│     12
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -108.8341716275                   -0.62   14.5     440s
+  2   -108.8735507003       -1.40       -0.99    1.2     179s
+  3   -108.8849778163       -1.94       -1.92    8.2     332s
+  4   -108.8868801660       -2.72       -2.13    4.8     239s
+  5   -108.8880031101       -2.95       -2.94    3.8     233s
+  6   -108.8880216493       -4.73       -2.91    8.8     381s
+  7   -108.8880380819       -4.78       -3.07    1.4     177s
+  8   -108.8880542912       -4.79       -3.91    2.3     208s
+  9   -108.8880537028   +   -6.23       -3.64   10.1     403s
+ 10   -108.8880541085       -6.39       -3.78    1.3     174s
+ 11   -108.8880546389       -6.28       -4.34    3.0     228s
+ 12   -108.8880546695       -7.51       -4.51    5.2     231s
+ 13   -108.8880546798       -7.99       -4.68    2.1     189s
+ 14   -108.8880546856       -8.24       -4.90    2.6     198s
+ 15   -108.8880546893       -8.43       -5.81    3.9     235s
+ 16   -108.8880546894       -9.97       -5.94   10.6     432s
+ 17   -108.8880546894      -10.64       -6.29    2.1     196s
+ 18   -108.8880546894      -11.45       -6.61    4.5     268s
+ 19   -108.8880546894      -12.20       -6.92    4.3     230s
+ 20   -108.8880546894   +  -13.85       -7.39    5.6     245s
+ 21   -108.8880546894      -13.25       -7.78    5.1     297s
+ 22   -108.8880546894   +    -Inf       -8.15    5.4     249s
+ 23   -108.8880546894   +    -Inf       -8.55    4.3     283s
+ 24   -108.8880546894   +  -13.37       -8.91    4.3     269s
+ 25   -108.8880546894   +    -Inf       -9.43    5.6     255s
+ 26   -108.8880546894      -13.55      -10.02    5.4     310s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            2.26h /  99.9%           1.58TiB /  99.9%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1.92h   85.1%   1.92h    915GiB   56.5%   915GiB
+   LOBPCG                 858    1.65h   73.0%   6.90s    847GiB   52.3%  0.99GiB
+     DftHamiltonian...  4.96k    1.00h   44.4%   726ms    146GiB    9.0%  30.1MiB
+       nonlocal         4.96k    1997s   24.6%   402ms    124GiB    7.6%  25.6MiB
+       local+kinetic     227k    1592s   19.6%  7.01ms    125MiB    0.0%     576B
+     ortho! X vs Y      7.35k     671s    8.3%  91.2ms   82.9GiB    5.1%  11.5MiB
+       ortho!           15.8k     170s    2.1%  10.8ms   3.35GiB    0.2%   222KiB
+     rayleigh_ritz      4.11k     293s    3.6%  71.3ms   5.46GiB    0.3%  1.36MiB
+       ortho!           4.11k    943ms    0.0%   230μs    793MiB    0.0%   198KiB
+     Update residuals   4.96k    92.1s    1.1%  18.6ms    114GiB    7.0%  23.5MiB
+     ortho!               858    34.0s    0.4%  39.6ms    503MiB    0.0%   600KiB
+     preconditioning    4.96k    18.5s    0.2%  3.73ms    220MiB    0.0%  45.5KiB
+   energy_hamiltonian      27     307s    3.8%   11.4s   24.0GiB    1.5%   909MiB
+     ene_ops               27     295s    3.6%   10.9s   16.0GiB    1.0%   607MiB
+       ene_ops: non...     27     281s    3.5%   10.4s   3.77GiB    0.2%   143MiB
+       ene_ops: xc         27    10.5s    0.1%   387ms   10.8GiB    0.7%   409MiB
+       ene_ops: kin...     27    3.31s    0.0%   123ms   16.1MiB    0.0%   612KiB
+       ene_ops: har...     27    313ms    0.0%  11.6ms   1.17GiB    0.1%  44.5MiB
+       ene_ops: local      27   34.6ms    0.0%  1.28ms    241MiB    0.0%  8.92MiB
+   energy                  26     295s    3.6%   11.3s   15.5GiB    1.0%   612MiB
+     ene_ops: nonlocal     26     279s    3.4%   10.7s   3.77GiB    0.2%   148MiB
+     ene_ops: xc           26    10.2s    0.1%   394ms   10.4GiB    0.6%   409MiB
+     ene_ops: kinetic      26    5.25s    0.1%   202ms   16.1MiB    0.0%   634KiB
+     ene_ops: hartree      26    305ms    0.0%  11.7ms   1.13GiB    0.1%  44.5MiB
+     ene_ops: local        26   33.3ms    0.0%  1.28ms    232MiB    0.0%  8.92MiB
+   compute_density         26     232s    2.9%   8.91s   1.59GiB    0.1%  62.5MiB
+     symmetrize_ρ          26    1.04s    0.0%  40.0ms   1.24GiB    0.1%  48.9MiB
+   χ0Mixing                26    47.6s    0.6%   1.83s   16.2GiB    1.0%   636MiB
+     compute_density       26    38.4s    0.5%   1.48s   1.58GiB    0.1%  62.3MiB
+       symmetrize_ρ        26    295ms    0.0%  11.3ms   1.24GiB    0.1%  48.9MiB
+     apply_kernel         210    7.73s    0.1%  36.8ms   10.0GiB    0.6%  48.9MiB
+   ortho_qr                33    11.5s    0.1%   348ms   2.89GiB    0.2%  89.6MiB
+ compute_forces             1    1174s   14.5%   1174s    686GiB   42.4%   686GiB
+   forces: nonlocal         1    1144s   14.1%   1144s    684GiB   42.2%   684GiB
+   forces: local            1    19.9s    0.2%   19.9s   66.8MiB    0.0%  66.8MiB
+   forces: xc               1    9.37s    0.1%   9.37s   1.96GiB    0.1%  1.96GiB
+ PlaneWaveBasis             1    39.1s    0.5%   39.1s   18.6GiB    1.1%  18.6GiB
+   Instantiation At...      1    20.0s    0.2%   20.0s   16.3GiB    1.0%  16.3GiB
+   Instantiation At...      1    10.5s    0.1%   10.5s    169MiB    0.0%   169MiB
+     enforce_real!          1   5.60ms    0.0%  5.60ms   5.03KiB    0.0%  5.03KiB
+   Instantiation Xc         1    6.54s    0.1%   6.54s   0.97GiB    0.1%  0.97GiB
+     enforce_real!          1   5.60ms    0.0%  5.60ms   5.03KiB    0.0%  5.03KiB
+   build_kpoints            1    492ms    0.0%   492ms    549MiB    0.0%   549MiB
+   Instantiation Ewald      1   82.3ms    0.0%  82.3ms   7.77KiB    0.0%  7.77KiB
+     precomp: Ewald         1   82.3ms    0.0%  82.3ms   5.61KiB    0.0%  5.61KiB
+   Instantiation Ki...      1   21.5ms    0.0%  21.5ms   59.4MiB    0.0%  59.4MiB
+   Instantiation Ha...      1   9.55ms    0.0%  9.55ms   13.4MiB    0.0%  13.4MiB
+     enforce_real!          1   5.46ms    0.0%  5.46ms   5.03KiB    0.0%  5.03KiB
+   _check_kpoint_re...      1   47.2μs    0.0%  47.2μs     0.00B    0.0%    0.00B
+   Instantiation Ps...      1   21.9μs    0.0%  21.9μs   1.23KiB    0.0%  1.23KiB
+   Instantiation En...      1   1.72μs    0.0%  1.72μs      672B    0.0%     672B
+ enforce_real!              1   5.60ms    0.0%  5.60ms   5.03KiB    0.0%  5.03KiB
+ symmetry_operations        1    554μs    0.0%   554μs    162KiB    0.0%   162KiB
+   _check_symmetries        1   15.6μs    0.0%  15.6μs   2.05KiB    0.0%  2.05KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 47 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 6
+    num. julia threads   : 1
+    num. DFTK  threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (108, 72, 72), 559872 total points
+    kgrid                : MonkhorstPack([4, 7, 7])
+    num.   red. kpoints  : 196
+    num. irred. kpoints  : 196
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [22.2692   , -0.467807 , -0.0865371]
+                               [0.386593  , 14.8233   , -0.40948  ]
+                               [0.238459  , -0.0994266, 15.1973   ]
+        unit cell volume     : 5018.8 Bohr³
+    
+        atoms                : Al₄₇
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 141
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    32-element Vector{Int64}:
+│     18
+│      8
+│     14
+│     17
+│      ⋮
+│     14
+│     13
+│     19
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    33-element Vector{Int64}:
+│     17
+│     18
+│     13
+│     13
+│      ⋮
+│     16
+│     10
+│     23
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    33-element Vector{Int64}:
+│     17
+│     10
+│     18
+│     21
+│      ⋮
+│     12
+│     22
+│     12
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -108.8113853456                   -0.61   14.8     394s
+  2   -108.8545399112       -1.36       -0.99    1.1     148s
+  3   -108.8666534779       -1.92       -1.90    8.0     299s
+  4   -108.8688109583       -2.67       -2.14    4.6     199s
+  5   -108.8699604754       -2.94       -3.20    4.4     210s
+  6   -108.8699673743       -5.16       -2.94   10.5     396s
+  7   -108.8699815000       -4.85       -3.10    1.9     158s
+  8   -108.8699942352       -4.89       -3.75    2.8     198s
+  9   -108.8699949945       -6.12       -4.15    6.1     240s
+ 10   -108.8699950753       -7.09       -4.41    5.0     227s
+ 11   -108.8699951074       -7.49       -5.26    3.3     222s
+ 12   -108.8699951080       -9.19       -5.50    9.0     339s
+ 13   -108.8699951083       -9.60       -5.99    3.1     203s
+ 14   -108.8699951083      -10.50       -6.30    6.2     276s
+ 15   -108.8699951083      -11.34       -6.72    4.3     201s
+ 16   -108.8699951083      -12.06       -7.34    5.5     252s
+ 17   -108.8699951083      -13.37       -7.53    8.3     302s
+ 18   -108.8699951083      -13.85       -8.14    3.1     188s
+ 19   -108.8699951083      -13.85       -8.36    7.3     306s
+ 20   -108.8699951083   +  -13.85       -8.80    2.6     173s
+ 21   -108.8699951083      -13.85       -9.17    4.6     258s
+ 22   -108.8699951083   +  -13.85       -9.74    5.8     229s
+ 23   -108.8699951083      -13.85      -10.59    6.7     283s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            1.79h /  99.9%           1.45TiB /  99.9%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    1.59h   88.8%   1.59h    820GiB   55.2%   820GiB
+   LOBPCG                 759    1.34h   74.7%   6.34s    762GiB   51.3%  1.00GiB
+     DftHamiltonian...  4.75k    3158s   49.0%   665ms    131GiB    8.8%  28.2MiB
+       nonlocal         4.75k    1769s   27.5%   372ms    111GiB    7.5%  23.9MiB
+       local+kinetic     214k    1375s   21.3%  6.43ms    117MiB    0.0%     576B
+     ortho! X vs Y      7.23k     631s    9.8%  87.3ms   82.4GiB    5.5%  11.7MiB
+       ortho!           15.5k     172s    2.7%  11.1ms   3.39GiB    0.2%   229KiB
+     rayleigh_ritz      3.99k     284s    4.4%  71.1ms   5.56GiB    0.4%  1.43MiB
+       ortho!           3.99k    728ms    0.0%   182μs    774MiB    0.1%   199KiB
+     Update residuals   4.75k    51.2s    0.8%  10.8ms    101GiB    6.8%  21.8MiB
+     ortho!               759    28.4s    0.4%  37.4ms    445MiB    0.0%   600KiB
+     preconditioning    4.75k    16.5s    0.3%  3.47ms    209MiB    0.0%  45.1KiB
+   energy_hamiltonian      24     252s    3.9%   10.5s   20.6GiB    1.4%   878MiB
+     ene_ops               24     245s    3.8%   10.2s   13.8GiB    0.9%   587MiB
+       ene_ops: non...     24     233s    3.6%   9.71s   3.33GiB    0.2%   142MiB
+       ene_ops: xc         24    9.07s    0.1%   378ms   9.21GiB    0.6%   393MiB
+       ene_ops: kin...     24    2.83s    0.0%   118ms   14.3MiB    0.0%   609KiB
+       ene_ops: har...     24    252ms    0.0%  10.5ms   1.00GiB    0.1%  42.7MiB
+       ene_ops: local      24   29.6ms    0.0%  1.23ms    206MiB    0.0%  8.57MiB
+   energy                  23     247s    3.8%   10.7s   13.3GiB    0.9%   594MiB
+     ene_ops: nonlocal     23     234s    3.6%   10.2s   3.33GiB    0.2%   148MiB
+     ene_ops: xc           23    8.72s    0.1%   379ms   8.83GiB    0.6%   393MiB
+     ene_ops: kinetic      23    3.74s    0.1%   163ms   14.2MiB    0.0%   634KiB
+     ene_ops: hartree      23    243ms    0.0%  10.6ms   0.96GiB    0.1%  42.7MiB
+     ene_ops: local        23   28.6ms    0.0%  1.24ms    197MiB    0.0%  8.57MiB
+   compute_density         23     188s    2.9%   8.18s   1.35GiB    0.1%  60.0MiB
+     symmetrize_ρ          23    778ms    0.0%  33.8ms   1.06GiB    0.1%  47.0MiB
+   χ0Mixing                23    40.0s    0.6%   1.74s   13.3GiB    0.9%   592MiB
+     compute_density       23    32.3s    0.5%   1.40s   1.34GiB    0.1%  59.8MiB
+       symmetrize_ρ        23    226ms    0.0%  9.83ms   1.06GiB    0.1%  47.0MiB
+     apply_kernel         178    6.58s    0.1%  37.0ms   8.17GiB    0.5%  47.0MiB
+   ortho_qr                33    5.77s    0.1%   175ms   2.73GiB    0.2%  84.6MiB
+ compute_forces             1     682s   10.6%    682s    648GiB   43.6%   648GiB
+   forces: nonlocal         1     654s   10.1%    654s    646GiB   43.5%   646GiB
+   forces: local            1    19.1s    0.3%   19.1s   64.2MiB    0.0%  64.2MiB
+   forces: xc               1    8.98s    0.1%   8.98s   1.88GiB    0.1%  1.88GiB
+ PlaneWaveBasis             1    36.8s    0.6%   36.8s   17.6GiB    1.2%  17.6GiB
+   Instantiation At...      1    18.6s    0.3%   18.6s   15.4GiB    1.0%  15.4GiB
+   Instantiation At...      1    10.2s    0.2%   10.2s    163MiB    0.0%   163MiB
+     enforce_real!          1   5.37ms    0.0%  5.37ms   5.03KiB    0.0%  5.03KiB
+   Instantiation Xc         1    6.37s    0.1%   6.37s    951MiB    0.1%   951MiB
+     enforce_real!          1   5.54ms    0.0%  5.54ms   5.03KiB    0.0%  5.03KiB
+   build_kpoints            1    367ms    0.0%   367ms    529MiB    0.0%   529MiB
+   Instantiation Ewald      1   82.2ms    0.0%  82.2ms   7.77KiB    0.0%  7.77KiB
+     precomp: Ewald         1   82.2ms    0.0%  82.2ms   5.61KiB    0.0%  5.61KiB
+   Instantiation Ki...      1   13.5ms    0.0%  13.5ms   56.0MiB    0.0%  56.0MiB
+   Instantiation Ha...      1   9.29ms    0.0%  9.29ms   12.8MiB    0.0%  12.8MiB
+     enforce_real!          1   5.32ms    0.0%  5.32ms   5.03KiB    0.0%  5.03KiB
+   _check_kpoint_re...      1   48.2μs    0.0%  48.2μs     0.00B    0.0%    0.00B
+   Instantiation Ps...      1   21.7μs    0.0%  21.7μs   1.23KiB    0.0%  1.23KiB
+   Instantiation En...      1   1.94μs    0.0%  1.94μs      672B    0.0%     672B
+ enforce_real!              1   5.37ms    0.0%  5.37ms   5.03KiB    0.0%  5.03KiB
+ symmetry_operations        1    568μs    0.0%   568μs    162KiB    0.0%   162KiB
+   _check_symmetries        1   15.1μs    0.0%  15.1μs   2.05KiB    0.0%  2.05KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 48 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 6
+    num. julia threads   : 1
+    num. DFTK  threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (75, 108, 108), 874800 total points
+    kgrid                : MonkhorstPack([7, 4, 4])
+    num.   red. kpoints  : 112
+    num. irred. kpoints  : 112
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [15.7      , 0.0592923 , 0.673177  ]
+                               [0.515483  , 22.4744   , 0.652645  ]
+                               [0.20739   , 0.944892  , 22.0151   ]
+        unit cell volume     : 7754.8 Bohr³
+    
+        atoms                : Al₇₁
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 213
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    19-element Vector{Int64}:
+│     17
+│      9
+│     20
+│     18
+│      ⋮
+│     16
+│     22
+│     13
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -164.3022696038                   -0.52   15.3     667s
+  2   -164.3793552678       -1.11       -0.89    1.2     261s
+  3   -164.3998895622       -1.69       -1.78    8.3     517s
+  4   -164.4038080715       -2.41       -1.99    2.4     286s
+  5   -164.4063432211       -2.60       -2.84    4.4     330s
+  6   -164.4063566241       -4.87       -2.71   10.1     606s
+  7   -164.4064040040       -4.32       -2.86    1.4     257s
+  8   -164.4064374074       -4.48       -3.11    2.3     303s
+  9   -164.4064490983       -4.93       -3.34    2.1     271s
+ 10   -164.4064530804       -5.40       -3.60    3.4     292s
+ 11   -164.4064544593       -5.86       -3.87    5.8     346s
+ 12   -164.4064550193       -6.25       -4.39    5.5     377s
+ 13   -164.4064550852       -7.18       -4.87    6.4     459s
+ 14   -164.4064550888       -8.44       -5.16    5.6     427s
+ 15   -164.4064550895       -9.17       -5.91    4.7     363s
+ 16   -164.4064550895      -10.45       -6.00    9.0     551s
+ 17   -164.4064550895      -10.74       -6.43    2.0     275s
+ 18   -164.4064550895      -11.63       -6.87    5.9     383s
+ 19   -164.4064550895      -12.43       -7.30    4.2     433s
+ 20   -164.4064550895      -13.25       -7.43    5.5     395s
+ 21   -164.4064550895      -13.55       -7.98    2.3     301s
+ 22   -164.4064550895      -13.25       -7.93    7.4     470s
+ 23   -164.4064550895   +  -13.07       -8.64    2.1     280s
+ 24   -164.4064550895      -13.25       -8.47    9.6     548s
+ 25   -164.4064550895   +  -13.25       -9.62    2.0     296s
+ 26   -164.4064550895      -13.25       -9.34   10.0     628s
+ 27   -164.4064550895   +  -13.07       -9.80    2.0     290s
+ 28   -164.4064550895      -13.07       -9.97    3.4     380s
+ 29   -164.4064550895   +    -Inf      -10.17    1.7     260s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            3.48h /  99.9%           2.52TiB /  99.9%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    3.14h   90.1%   3.14h   1.26TiB   50.0%  1.26TiB
+   LOBPCG                 551    2.63h   75.6%   17.2s   1.15TiB   45.9%  2.15GiB
+     DftHamiltonian...  3.38k    1.74h   49.9%   1.85s    197GiB    7.7%  59.8MiB
+       nonlocal         3.38k    1.05h   30.3%   1.12s    175GiB    6.8%  53.0MiB
+       local+kinetic     219k    2448s   19.5%  11.2ms    120MiB    0.0%     576B
+     ortho! X vs Y      5.11k    1124s    9.0%   220ms    116GiB    4.5%  23.2MiB
+       ortho!           11.2k     322s    2.6%  28.8ms   4.68GiB    0.2%   440KiB
+     rayleigh_ritz      2.83k     564s    4.5%   199ms   7.54GiB    0.3%  2.73MiB
+       ortho!           2.83k    1.16s    0.0%   410μs   1.09GiB    0.0%   405KiB
+     Update residuals   3.38k    94.4s    0.8%  27.9ms    160GiB    6.2%  48.6MiB
+     ortho!               551    66.2s    0.5%   120ms    728MiB    0.0%  1.32MiB
+     preconditioning    3.38k    25.5s    0.2%  7.54ms    178MiB    0.0%  53.9KiB
+   energy_hamiltonian      30     613s    4.9%   20.4s   33.7GiB    1.3%  1.12GiB
+     ene_ops               30     604s    4.8%   20.1s   25.9GiB    1.0%   883MiB
+       ene_ops: non...     30     578s    4.6%   19.3s   5.50GiB    0.2%   188MiB
+       ene_ops: xc         30    20.2s    0.2%   675ms   18.0GiB    0.7%   614MiB
+       ene_ops: kin...     30    4.80s    0.0%   160ms   15.2MiB    0.0%   518KiB
+       ene_ops: har...     30    565ms    0.0%  18.8ms   1.96GiB    0.1%  66.8MiB
+       ene_ops: local      30   59.9ms    0.0%  2.00ms    401MiB    0.0%  13.4MiB
+   energy                  29     606s    4.8%   20.9s   25.2GiB    1.0%   889MiB
+     ene_ops: nonlocal     29     579s    4.6%   19.9s   5.50GiB    0.2%   194MiB
+     ene_ops: xc           29    20.1s    0.2%   694ms   17.4GiB    0.7%   614MiB
+     ene_ops: kinetic      29    6.71s    0.1%   231ms   15.2MiB    0.0%   535KiB
+     ene_ops: hartree      29    565ms    0.0%  19.5ms   1.89GiB    0.1%  66.8MiB
+     ene_ops: local        29   56.6ms    0.0%  1.95ms    388MiB    0.0%  13.4MiB
+   compute_density         29     372s    3.0%   12.8s   2.65GiB    0.1%  93.6MiB
+     symmetrize_ρ          29    2.36s    0.0%  81.5ms   2.08GiB    0.1%  73.4MiB
+   χ0Mixing                29    79.0s    0.6%   2.72s   28.7GiB    1.1%  0.99GiB
+     compute_density       29    60.5s    0.5%   2.09s   2.65GiB    0.1%  93.5MiB
+       symmetrize_ρ        29    582ms    0.0%  20.1ms   2.08GiB    0.1%  73.4MiB
+     apply_kernel         254    14.7s    0.1%  57.7ms   18.2GiB    0.7%  73.4MiB
+   ortho_qr                19    11.8s    0.1%   623ms   3.65GiB    0.1%   197MiB
+ compute_forces             1    1188s    9.5%   1188s   1.23TiB   49.1%  1.23TiB
+   forces: nonlocal         1    1139s    9.1%   1139s   1.23TiB   48.9%  1.23TiB
+   forces: local            1    30.4s    0.2%   30.4s    100MiB    0.0%   100MiB
+   forces: xc               1    19.4s    0.2%   19.4s   4.03GiB    0.2%  4.03GiB
+ PlaneWaveBasis             1    48.6s    0.4%   48.6s   23.8GiB    0.9%  23.8GiB
+   Instantiation At...      1    18.6s    0.1%   18.6s   20.1GiB    0.8%  20.1GiB
+   Instantiation At...      1    16.2s    0.1%   16.2s    247MiB    0.0%   247MiB
+     enforce_real!          1   8.31ms    0.0%  8.31ms   5.61KiB    0.0%  5.61KiB
+   Instantiation Xc         1    11.2s    0.1%   11.2s   2.07GiB    0.1%  2.07GiB
+     enforce_real!          1   8.31ms    0.0%  8.31ms   5.61KiB    0.0%  5.61KiB
+   build_kpoints            1    359ms    0.0%   359ms    484MiB    0.0%   484MiB
+   Instantiation Ewald      1    236ms    0.0%   236ms   9.58KiB    0.0%  9.58KiB
+     precomp: Ewald         1    236ms    0.0%   236ms   7.42KiB    0.0%  7.42KiB
+   Instantiation Ha...      1    175ms    0.0%   175ms   20.0MiB    0.0%  20.0MiB
+     enforce_real!          1   8.11ms    0.0%  8.11ms   5.61KiB    0.0%  5.61KiB
+   Instantiation Ki...      1   11.0ms    0.0%  11.0ms   49.8MiB    0.0%  49.8MiB
+   _check_kpoint_re...      1   26.1μs    0.0%  26.1μs     0.00B    0.0%    0.00B
+   Instantiation Ps...      1   23.0μs    0.0%  23.0μs   1.23KiB    0.0%  1.23KiB
+   Instantiation En...      1   1.71μs    0.0%  1.71μs      672B    0.0%     672B
+ enforce_real!              1   8.31ms    0.0%  8.31ms   5.61KiB    0.0%  5.61KiB
+ symmetry_operations        1    754μs    0.0%   754μs    237KiB    0.0%   237KiB
+   _check_symmetries        1   21.6μs    0.0%  21.6μs   2.59KiB    0.0%  2.59KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 51 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 6
+    num. julia threads   : 1
+    num. DFTK  threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (108, 72, 108), 839808 total points
+    kgrid                : MonkhorstPack([4, 7, 4])
+    num.   red. kpoints  : 112
+    num. irred. kpoints  : 112
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [22.9391   , -0.0149972, -0.39049  ]
+                               [-0.271335 , 15.2313   , 0.159047  ]
+                               [0.255015  , -0.1579   , 22.9537   ]
+        unit cell volume     : 8021.8 Bohr³
+    
+        atoms                : Al₇₁
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 213
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    18-element Vector{Int64}:
+│     20
+│     21
+│     22
+│      5
+│      ⋮
+│     14
+│     15
+│     22
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    18-element Vector{Int64}:
+│     25
+│     13
+│     20
+│     16
+│      ⋮
+│     20
+│     16
+│     20
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    19-element Vector{Int64}:
+│     15
+│     15
+│      6
+│     20
+│      ⋮
+│     22
+│     15
+│      4
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -164.4436661747                   -0.54   16.9     711s
+  2   -164.4946650072       -1.29       -0.91    1.2     259s
+  3   -164.5085760324       -1.86       -1.89    7.9     502s
+  4   -164.5111291326       -2.59       -2.11    4.7     350s
+  5   -164.5126259135       -2.82       -2.91    4.2     341s
+  6   -164.5126502860       -4.61       -2.87    9.5     596s
+  7   -164.5126730467       -4.64       -3.03    1.4     259s
+  8   -164.5126965131       -4.63       -3.80    2.1     296s
+  9   -164.5126957048   +   -6.09       -3.57    9.7     591s
+ 10   -164.5126961976       -6.31       -3.68    1.3     256s
+ 11   -164.5126971712       -6.01       -4.41    2.0     294s
+ 12   -164.5126971891       -7.75       -4.42    7.8     454s
+ 13   -164.5126972020       -7.89       -4.54    1.2     255s
+ 14   -164.5126972156       -7.87       -4.82    1.9     265s
+ 15   -164.5126972212       -8.25       -5.43    3.6     352s
+ 16   -164.5126972213      -10.19       -5.40    7.2     500s
+ 17   -164.5126972215       -9.64       -5.61    1.6     261s
+ 18   -164.5126972216       -9.80       -6.35    3.0     329s
+ 19   -164.5126972217      -11.37       -6.42    9.4     566s
+ 20   -164.5126972217      -11.71       -6.74    1.7     262s
+ 21   -164.5126972217      -12.29       -6.97    3.5     405s
+ 22   -164.5126972217      -13.25       -7.23    2.0     277s
+ 23   -164.5126972217      -13.07       -7.63    3.9     381s
+ 24   -164.5126972217      -13.25       -7.60    5.6     399s
+ 25   -164.5126972217   +    -Inf       -7.84    1.5     261s
+ 26   -164.5126972217   +    -Inf       -8.29    3.9     354s
+ 27   -164.5126972217      -13.55       -8.49    5.6     435s
+ 28   -164.5126972217      -13.55       -9.20    2.5     289s
+ 29   -164.5126972217   +  -13.25       -9.08    9.4     574s
+ 30   -164.5126972217      -13.55       -9.49    2.0     278s
+ 31   -164.5126972217   +  -13.55       -9.43    4.0     430s
+ 32   -164.5126972217      -13.25       -9.87    1.6     260s
+ 33   -164.5126972217   +  -13.07      -10.72    3.7     364s
+ ────────────────────────────────────────────────────────────────────────────────
+                                        Time                    Allocations      
+                               ───────────────────────   ────────────────────────
+       Tot / % measured:            3.81h /  99.9%           2.69TiB /  99.9%    
+
+ Section               ncalls     time    %tot     avg     alloc    %tot      avg
+ ────────────────────────────────────────────────────────────────────────────────
+ self_consistent_field      1    3.46h   90.9%   3.46h   1.39TiB   51.6%  1.39TiB
+   LOBPCG                 627    2.85h   74.8%   16.4s   1.27TiB   47.4%  2.08GiB
+     DftHamiltonian...  3.31k    1.87h   49.1%   2.03s    216GiB    7.8%  66.7MiB
+       nonlocal         3.31k    1.16h   30.5%   1.26s    194GiB    7.1%  60.2MiB
+       local+kinetic     236k    2524s   18.4%  10.7ms    130MiB    0.0%     576B
+     ortho! X vs Y      4.74k    1231s    9.0%   260ms    116GiB    4.2%  25.0MiB
+       ortho!           10.3k     362s    2.6%  35.0ms   5.02GiB    0.2%   509KiB
+     rayleigh_ritz      2.68k     622s    4.5%   232ms   8.15GiB    0.3%  3.11MiB
+       ortho!           2.68k    1.27s    0.0%   474μs   1.20GiB    0.0%   469KiB
+     Update residuals   3.31k     105s    0.8%  31.7ms    179GiB    6.5%  55.3MiB
+     ortho!               627    78.3s    0.6%   125ms    829MiB    0.0%  1.32MiB
+     preconditioning    3.31k    28.4s    0.2%  8.57ms    184MiB    0.0%  56.9KiB
+   energy_hamiltonian      34     723s    5.3%   21.3s   36.9GiB    1.3%  1.09GiB
+     ene_ops               34     713s    5.2%   21.0s   28.4GiB    1.0%   856MiB
+       ene_ops: non...     34     679s    5.0%   20.0s   6.26GiB    0.2%   188MiB
+       ene_ops: xc         34    22.8s    0.2%   670ms   19.6GiB    0.7%   590MiB
+       ene_ops: kin...     34    9.86s    0.1%   290ms   17.3MiB    0.0%   520KiB
+       ene_ops: har...     34    582ms    0.0%  17.1ms   2.13GiB    0.1%  64.1MiB
+       ene_ops: local      34   62.0ms    0.0%  1.82ms    436MiB    0.0%  12.8MiB
+   energy                  33     710s    5.2%   21.5s   27.8GiB    1.0%   861MiB
+     ene_ops: nonlocal     33     678s    4.9%   20.6s   6.26GiB    0.2%   194MiB
+     ene_ops: xc           33    22.4s    0.2%   680ms   19.0GiB    0.7%   590MiB
+     ene_ops: kinetic      33    8.47s    0.1%   257ms   17.2MiB    0.0%   535KiB
+     ene_ops: hartree      33    587ms    0.0%  17.8ms   2.07GiB    0.1%  64.1MiB
+     ene_ops: local        33   59.7ms    0.0%  1.81ms    423MiB    0.0%  12.8MiB
+   compute_density         33     386s    2.8%   11.7s   2.90GiB    0.1%  89.9MiB
+     symmetrize_ρ          33    2.34s    0.0%  70.9ms   2.27GiB    0.1%  70.5MiB
+   χ0Mixing                33    77.8s    0.6%   2.36s   31.5GiB    1.1%  0.95GiB
+     compute_density       33    57.2s    0.4%   1.73s   2.89GiB    0.1%  89.7MiB
+       symmetrize_ρ        33    578ms    0.0%  17.5ms   2.27GiB    0.1%  70.5MiB
+     apply_kernel         291    16.6s    0.1%  57.0ms   20.0GiB    0.7%  70.5MiB
+   ortho_qr                19    12.0s    0.1%   634ms   3.78GiB    0.1%   203MiB
+ compute_forces             1    1205s    8.8%   1205s   1.28TiB   47.5%  1.28TiB
+   forces: nonlocal         1    1157s    8.4%   1157s   1.27TiB   47.4%  1.27TiB
+   forces: local            1    29.2s    0.2%   29.2s   96.2MiB    0.0%  96.2MiB
+   forces: xc               1    19.0s    0.1%   19.0s   3.87GiB    0.1%  3.87GiB
+ PlaneWaveBasis             1    47.9s    0.3%   47.9s   24.3GiB    0.9%  24.3GiB
+   Instantiation At...      1    19.1s    0.1%   19.1s   20.8GiB    0.8%  20.8GiB
+   Instantiation At...      1    15.5s    0.1%   15.5s    238MiB    0.0%   238MiB
+     enforce_real!          1   8.05ms    0.0%  8.05ms   5.61KiB    0.0%  5.61KiB
+   Instantiation Xc         1    10.8s    0.1%   10.8s   1.99GiB    0.1%  1.99GiB
+     enforce_real!          1   8.05ms    0.0%  8.05ms   5.61KiB    0.0%  5.61KiB
+   build_kpoints            1    364ms    0.0%   364ms    467MiB    0.0%   467MiB
+   Instantiation Ewald      1    285ms    0.0%   285ms   9.58KiB    0.0%  9.58KiB
+     precomp: Ewald         1    285ms    0.0%   285ms   7.42KiB    0.0%  7.42KiB
+   Instantiation Ha...      1    172ms    0.0%   172ms   19.2MiB    0.0%  19.2MiB
+     enforce_real!          1   7.86ms    0.0%  7.86ms   5.61KiB    0.0%  5.61KiB
+   Instantiation Ki...      1   11.0ms    0.0%  11.0ms   51.6MiB    0.0%  51.6MiB
+   _check_kpoint_re...      1   31.1μs    0.0%  31.1μs     0.00B    0.0%    0.00B
+   Instantiation Ps...      1   23.1μs    0.0%  23.1μs   1.23KiB    0.0%  1.23KiB
+   Instantiation En...      1   1.82μs    0.0%  1.82μs      672B    0.0%     672B
+ enforce_real!              1   8.05ms    0.0%  8.05ms   5.61KiB    0.0%  5.61KiB
+ symmetry_operations        1    747μs    0.0%   747μs    237KiB    0.0%   237KiB
+   _check_symmetries        1   20.7μs    0.0%  20.7μs   2.59KiB    0.0%  2.59KiB
+ ────────────────────────────────────────────────────────────────────────────────
+#
+# 52 / 100 ================================
+#
+PlaneWaveBasis discretization:
+    architecture         : DFTK.CPU()
+    num. mpi processes   : 6
+    num. julia threads   : 1
+    num. DFTK  threads   : 1
+    num. blas  threads   : 1
+    num. fft   threads   : 1
+
+    Ecut                 : 26.0 Ha
+    fft_size             : (75, 72, 75), 405000 total points
+    kgrid                : MonkhorstPack([7, 7, 7])
+    num.   red. kpoints  : 343
+    num. irred. kpoints  : 343
+
+    Discretized Model(gga_x_pbe+gga_c_pbe, 3D):
+        lattice (in Bohr)    : [15.359    , 0.0959788 , 0.329773  ]
+                               [0.347229  , 15.1332   , -0.368371 ]
+                               [-0.181863 , 0.0207019 , 15.528    ]
+        unit cell volume     : 3609.7 Bohr³
+    
+        atoms                : Al₃₁
+        atom potentials      : ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+                               ElementPsp(Al; psp="/home/herbst/.julia/artifacts/56094b8162385233890d523c827ba06e07566079/Al.upf")
+    
+        num. electrons       : 93
+        spin polarization    : none
+        temperature          : 0.001 Ha
+        smearing             : DFTK.Smearing.Gaussian()
+    
+        terms                : Kinetic()
+                               AtomicLocal()
+                               AtomicNonlocal()
+                               Ewald(nothing)
+                               PspCorrection()
+                               Hartree()
+                               Xc(gga_x_pbe, gga_c_pbe)
+                               Entropy()
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    57-element Vector{Int64}:
+│     16
+│     14
+│     19
+│      7
+│      ⋮
+│     15
+│     13
+│     10
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    57-element Vector{Int64}:
+│     21
+│     11
+│     15
+│     15
+│      ⋮
+│     16
+│      6
+│     12
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+n     Energy            log10(ΔE)   log10(Δρ)   Diag   Δtime
+---   ---------------   ---------   ---------   ----   ------
+  1   -71.76095408395                   -0.71   12.0     247s
+┌ Warning: Eigensolver not converged
+│   n_iter =
+│    57-element Vector{Int64}:
+│     1
+│     1
+│     1
+│     1
+│     ⋮
+│     1
+│     1
+│     2
+└ @ DFTK ~/.julia/packages/DFTK/Yozrw/src/scf/self_consistent_field.jl:76
+  2   -71.79182009780       -1.51       -1.08    1.1     114s
+  3   -71.80065206940       -2.05       -1.92    7.0     230s
+  4   -71.80218698397       -2.81       -2.14    4.4     155s
+  5   -71.80313682070       -3.02       -3.01    3.5     160s
+  6   -71.80313937410       -5.59       -2.93    8.3     267s
+  7   -71.80315482619       -4.81       -3.14    1.8     117s
+  8   -71.80316420786       -5.03       -3.54    3.2     161s
+  9   -71.80316557310       -5.86       -3.81    3.0     171s
+ 10   -71.80316592710       -6.45       -4.12    2.6     131s
+ 11   -71.80316603896       -6.95       -4.55    3.9     190s
+ 12   -71.80316604954       -7.98       -4.74    4.9     145s
+ 13   -71.80316605656       -8.15       -5.31    3.7     180s
+ 14   -71.80316605705       -9.31       -5.93    6.0     203s
+ 15   -71.80316605707      -10.60       -6.38    7.0     220s
+ 16   -71.80316605707      -11.59       -6.71    4.3     196s
+ 17   -71.80316605707      -12.26       -6.91    5.3     151s
+ 18   -71.80316605707      -12.64       -7.36    3.3     154s
+ 19   -71.80316605707      -13.15       -7.95    4.3     200s
+ 20   -71.80316605707   +  -13.55       -8.45    6.4     198s
+ 21   -71.80316605707      -13.37       -8.82    4.9     205s
+ 22   -71.80316605707      -13.85       -9.06    4.7     199s
+ 23   -71.80316605707   +  -13.85      -10.26    3.0     147s
+
+===================================================================================
+=   BAD TERMINATION OF ONE OF YOUR APPLICATION PROCESSES
+=   PID 2838642 RUNNING AT stiitpc9
+=   EXIT CODE: 9
+=   CLEANING UP REMAINING PROCESSES
+=   YOU CAN IGNORE THE BELOW CLEANUP MESSAGES
+===================================================================================
+YOUR APPLICATION TERMINATED WITH THE EXIT STRING: Killed (signal 9)
+This typically refers to a problem with your application.
+Please see the FAQ page for debugging suggestions
+[91m[1mERROR: [22m[39mfailed process: Process(`[4m/home/herbst/.julia/artifacts/b7a943fb6a811908b073b8af69d955f16703ca2b/bin/mpiexec[24m [4m-np[24m [4m6[24m [4mjulia[24m [4m-t1[24m [4mrun_Al_defect_1.jl[24m`, ProcessExited(9)) [9]
+
+Stacktrace:
+  [1] [0m[1mpipeline_error[22m
+[90m    @[39m [90m./[39m[90m[4mprocess.jl:565[24m[39m[90m [inlined][39m
+  [2] [0m[1mrun[22m[0m[1m([22m::[0mCmd; [90mwait[39m::[0mBool[0m[1m)[22m
+[90m    @[39m [90mBase[39m [90m./[39m[90m[4mprocess.jl:480[24m[39m
+  [3] [0m[1mrun[22m[0m[1m([22m::[0mCmd[0m[1m)[22m
+[90m    @[39m [90mBase[39m [90m[4mprocess.jl:477[24m[39m
+  [4] [0m[1m(::var"#1#2")[22m[0m[1m([22m[90mexe[39m::[0mString[0m[1m)[22m
+[90m    @[39m [35mMain[39m [90m[4mnone:4[24m[39m
+  [5] [0m[1m(::JLLWrappers.var"#2#3"{var"#1#2", String})[22m[0m[1m([22m[0m[1m)[22m
+[90m    @[39m [36mJLLWrappers[39m [90m~/.julia/packages/JLLWrappers/pG9bm/src/[39m[90m[4mruntime.jl:49[24m[39m
+  [6] [0m[1mwithenv[22m[0m[1m([22m::[0mJLLWrappers.var"#2#3"[90m{var"#1#2", String}[39m, ::[0mPair[90m{String, String}[39m, ::[0mVararg[90m{Pair{String, String}}[39m[0m[1m)[22m
+[90m    @[39m [90mBase[39m [90m[4menv.jl:257[24m[39m
+  [7] [0m[1mwithenv_executable_wrapper[22m[0m[1m([22m[90mf[39m::[0mFunction, [90mexecutable_path[39m::[0mString, [90mPATH[39m::[0mString, [90mLIBPATH[39m::[0mString, [90madjust_PATH[39m::[0mBool, [90madjust_LIBPATH[39m::[0mBool[0m[1m)[22m
+[90m    @[39m [36mJLLWrappers[39m [90m~/.julia/packages/JLLWrappers/pG9bm/src/[39m[90m[4mruntime.jl:48[24m[39m
+  [8] [0m[1minvokelatest[22m[0m[1m([22m::[0mAny, ::[0mAny, ::[0mVararg[90m{Any}[39m; [90mkwargs[39m::[0m@Kwargs[90m{}[39m[0m[1m)[22m
+[90m    @[39m [90mBase[39m [90m./[39m[90m[4messentials.jl:892[24m[39m
+  [9] [0m[1minvokelatest[22m[0m[1m([22m::[0mAny, ::[0mAny, ::[0mVararg[90m{Any}[39m[0m[1m)[22m
+[90m    @[39m [90mBase[39m [90m./[39m[90m[4messentials.jl:889[24m[39m
+ [10] [0m[1mmpiexec[22m[0m[1m([22m[90mf[39m::[0mFunction; [90madjust_PATH[39m::[0mBool, [90madjust_LIBPATH[39m::[0mBool[0m[1m)[22m
+[90m    @[39m [32mMPICH_jll[39m [90m~/.julia/packages/JLLWrappers/pG9bm/src/products/[39m[90m[4mexecutable_generators.jl:22[24m[39m
+ [11] [0m[1mmpiexec[22m[0m[1m([22m[90mf[39m::[0mFunction[0m[1m)[22m
+[90m    @[39m [32mMPICH_jll[39m [90m~/.julia/packages/JLLWrappers/pG9bm/src/products/[39m[90m[4mexecutable_generators.jl:19[24m[39m
+ [12] top-level scope
+[90m    @[39m [90m[4mnone:4[24m[39m
