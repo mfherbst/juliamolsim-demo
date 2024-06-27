@@ -54,7 +54,6 @@ function run_extxyz(file)
         end
 
         res = run_calculation(system)
-
         extra_data = Dict("forces" => res.forces, "stresses" => res.stresses)
         save_scfres(outfile, res.scfres; extra_data)
     end

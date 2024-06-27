@@ -33,7 +33,7 @@ ACEfit v0.1.5
 
 If you have problems with using this potential, pin your installation to above versions.
 
-No defect
+Defect system
 Performing 1000 MD steps
-sys.loggers.temp.history = Quantity{Float64, 𝚯, Unitful.FreeUnits{(K,), 𝚯, nothing}}[323.0209612353907 K, 196.42273589563536 K, 234.58805974124414 K, 240.06167783372484 K, 227.88439611333442 K, 221.2866985598478 K, 236.37039857668825 K, 215.7404052672794 K, 225.77100276556897 K, 245.76735569007 K, 228.43702196321516 K]
+sys.loggers.temp.history = Quantity{Float64, 𝚯, Unitful.FreeUnits{(K,), 𝚯, nothing}}[280.5860418712598 K, 8089.388707266599 K, 66351.95803752297 K, 117082.73276437777 K, 187947.29289864935 K, 321770.47917676956 K, 347101.9031399505 K, 487010.10591940716 K, 524520.8072947663 K, 572612.0626198599 K, 714136.2399032229 K]
 Visualising results

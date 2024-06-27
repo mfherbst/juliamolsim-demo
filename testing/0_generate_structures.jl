@@ -35,7 +35,7 @@ maxrattle_cell = 0.1
 max_supercell  = 3
 
 # Category 1 structures: MD stability
-let file = "Al_supercells_1.extxyz", n_structures = 100
+let file = "Al_supercells.extxyz", n_structures = 100
     if !isfile(file)
         systems = map(1:n_structures) do i
             nx = rand(1:max_supercell)
@@ -51,22 +51,8 @@ let file = "Al_supercells_1.extxyz", n_structures = 100
     end
 end
 
-let file = "Al_supercells_2.extxyz", n_structures = 100
-    if !isfile(file)
-        systems = map(1:n_structures) do i
-            nx = ny = nz = 2
-            system = bulk(:Al, cubic=true) * (nx, ny, nz)
-            system = rattle_system(system,
-                                   maxrattle_pos  * rand(),
-                                   maxrattle_cell * rand())
-            FlexibleSystem(system; repeat=[nx, ny, nz])
-        end
-        save_trajectory(file, systems)
-    end
-end
-
 # Category 2 structures: Virials, elastic constants, long-range elastic fields
-let file = "Al_bulk_1.extxyz", n_structures = 100
+let file = "Al_bulk.extxyz", n_structures = 100
     if !isfile(file)
         systems = map(1:n_structures) do i
             system = rattle_cell(bulk(:Al), maxrattle_cell * rand(); update_position=false)
@@ -77,7 +63,7 @@ let file = "Al_bulk_1.extxyz", n_structures = 100
 end
 
 # Category 3 structures: Defects
-let file = "Al_defect_1.extxyz", n_structures = 100
+let file = "Al_defect.extxyz", n_structures = 100
     if !isfile(file)
         systems = map(1:n_structures) do i
             nx = rand(1:max_supercell)
@@ -97,7 +83,7 @@ let file = "Al_defect_1.extxyz", n_structures = 100
 end
 
 # Category 4 structures: Defect test systems:
-let file = "Al_test_1.extxyz", n_structures = 2
+let file = "Al_test.extxyz", n_structures = 2
     if !isfile(file)
         systems = map(1:n_structures) do i
             nx = rand(1:max_supercell)

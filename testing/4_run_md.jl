@@ -15,7 +15,7 @@ using GLMakie
 # Load potential and system
 potential = load_potential("Al_DFTK_dataset_potential.json"; new_format=true)
 
-defect = false
+defect = true
 if defect
     println("Defect system")
     structure = load_system("Al_test_1.extxyz", 1)

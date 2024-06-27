@@ -5,4 +5,4 @@ mpiexecjl --project -np 6 julia --project -t1 $BN.jl |& tee $BN.log
 exit $?
 =#
 include("calculations.jl")
-run_extxyz("Al_bulk_1.extxyz")
+run_extxyz("Al_bulk.extxyz")

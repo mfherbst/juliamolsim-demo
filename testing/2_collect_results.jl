@@ -14,6 +14,16 @@ using Logging
 
 dftk_results = filter!(endswith(".json"), readdir("dftk_output"))
 println("Found $(length(dftk_results)) result files.")
+
+# Concatenate systems
+systems = map(dftk_results) do dftk
+    prefix, _ = splitext(dftk)
+    structure, index = split(prefix, "-")
+    load_system(structure * ".extxyz", parse(Int, index))
+end
+save_trajectory("Al_structures.extxyz", systems)
+
+# Concatenate fitting results
 systems = map(dftk_results) do dftk
     prefix, _ = splitext(dftk)
     structure, index = split(prefix, "-")
